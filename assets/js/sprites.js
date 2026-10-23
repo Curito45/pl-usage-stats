@@ -37,10 +37,15 @@ window.PLSprites = (() => {
   function urls(name, isItem) {
     if (!isItem) {
       const n = pokemonNames[name] || compact(name);
-      const result = specialPokemon[name] || [
-        `${BASE}sprites/dex/${n}.png`, `${SHOWDOWN}dex/${n}.png`
-      ];
-      return distinct(result);
+      const regional = pokemonNames[name] || n;
+      return distinct([
+        `${BASE}sprites/overrides/pokemon/${regional}.png`,
+        `${BASE}sprites/dex/${regional}.png`,
+        `${BASE}sprites/home/${regional}.png`,
+        ...(specialPokemon[name] || []),
+        `${SHOWDOWN}dex/${regional}.png`,
+        `${SHOWDOWN}home/${regional}.png`
+      ]);
     }
     const n = itemNames[name] || normalize(name);
     const result = [
