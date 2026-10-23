@@ -21,7 +21,8 @@ window.PLSprites = (() => {
       `${SHOWDOWN}dex/growlithe-hisui.png`,
       `${SHOWDOWN}dex/growlithehisui.png`,
       `${SHOWDOWN}gen9/growlithe-hisui.png`,
-      `${SHOWDOWN}gen8/growlithe-hisui.png`
+      `${SHOWDOWN}gen8/growlithe-hisui.png`,
+      `${BASE}sprites/overrides/pokemon/growlithe-hisui.png`
     ],
     'Impidimp': [
       `${BASE}sprites/dex/impidimp.png`,
