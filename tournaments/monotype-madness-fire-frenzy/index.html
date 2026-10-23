@@ -14,6 +14,39 @@
  .podium{grid-template-columns:1fr}
  .roster{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
+
+/* Fire Frenzy podium — three horizontal player cards on desktop */
+#podium.podium {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+#podium.podium > article.winner,
+#podium.podium > article.winner.first {
+  display: block;
+  flex: 1 1 0 !important;
+  width: 0 !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  grid-column: auto !important;
+}
+#podium.podium .roster {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 5px;
+}
+#podium.podium .mon {min-width:0;padding:5px 2px}
+#podium.podium .mon img {height:56px;max-width:100%;object-fit:contain}
+#podium.podium .mon strong {font-size:10px;overflow-wrap:anywhere}
+#podium.podium .mon small {font-size:9px;overflow-wrap:anywhere}
+@media(max-width:650px) {
+ #podium.podium {flex-direction:column !important}
+ #podium.podium > article.winner,
+ #podium.podium > article.winner.first {width:100% !important;flex:auto !important}
+}
 </style></head><body><div class="page"><header class="header"><a class="brand" href="/pl-usage-stats/"><img src="../../assets/default-logo.png" alt="Poke Legends logo"><span>POKE <b>LEGENDS</b></span></a><nav class="headnav"><a href="/pl-usage-stats/">Tournaments</a><a href="https://store.poke-legends.com/">Store ↗</a></nav></header><div class="hero"><img class="poster" src="../../assets/tournaments/fire-frenzy.png" alt="Fire Frenzy event artwork"><div><div class="eyebrow">POKE LEGENDS · OFFICIAL TOURNAMENT</div><h1>Monotype Madness: Fire Frenzy</h1><div class="date">▦ October 3, 2026</div></div></div><nav class="mobnav"><a href="#podium" data-section="podium">🏆 Podium</a><a href="#rules" data-section="rules">📜 Rules</a><a href="#pokemon" data-section="pokemon">◈ Pokémon</a><a href="#megas" data-section="megas">✦ Megas</a><a href="#items" data-section="items">▣ Item Usage</a></nav><div class="shell"><aside class="sidebar"><div class="eyebrow">FIRE FRENZY · NAVIGATION</div><nav class="side-links"><a data-section="podium" href="#podium">🏆 Podium</a><a data-section="rules" href="#rules">📜 Rules &amp; Format</a><a data-section="pokemon" href="#pokemon">◈ Pokémon Usage</a><a data-section="megas" href="#megas">✦ Mega Usage</a><a href="#items" data-section="items">▣ Item Usage</a></nav><div class="overview"><div class="eyebrow">TOURNAMENT OVERVIEW</div><div class="stat"><strong>20</strong><small>Teams</small></div><div class="stat"><strong>120</strong><small>Pokémon slots</small></div><div class="stat"><strong>28</strong><small>Species / forms listed</small></div></div></aside><main class="content"><nav class="switcher"><a href="/pl-usage-stats/tournaments/spinda-metronome-triples/"><div class="small">← Next tournament</div><strong>Spinda Metronome Triples</strong><div class="hint">October 10, 2026</div></a><div class="inactive right"><div class="small">Previous tournament →</div><div>No earlier archived tournament</div></div></nav><section id="podium" class="section"><div class="section-head"><div><div class="eyebrow">FINAL PLACEMENTS</div><h2>Tournament podium</h2></div></div><div class="podium" id="podium"></div></section><section id="rules" class="section"><div class="section-head"><div><div class="eyebrow">EVENT INFORMATION</div><h2>Rules &amp; Format</h2></div></div><details class="disclosure"><summary>View tournament rules <span style="float:right;color:var(--accent)">▾</span></summary><div class="rules-inner"><div class="rules-columns"><div><h3>Format</h3><ul><li>Singles · 6v6</li><li>OU (Gym Rules) Format</li><li>Double Elimination</li><li>Hosted on Ascension</li><li>Required gimmick items provided</li></ul></div><div><h3>Rules</h3><ul><li>All Pokémon must be Fire type</li><li>No Legendary Pokémon</li><li>Mega Evolution allowed</li><li>Z-Moves allowed</li><li>No Dynamax</li><li>No Terastallization</li><li>Item Clause</li><li>Sleep Clause</li><li>Species Clause</li><li>Stall Clause (1 Pokémon)</li><li>Standard Gym Rules (OU)</li></ul></div></div></div></details></section><section id="pokemon" class="section"><div class="section-head"><div><div class="eyebrow">PICK RATES</div><h2>Pokémon usage</h2></div><div class="hint">20 submitted teams · click a Pokémon for details</div></div><div id="detail" class="detail" hidden></div><div class="panel"><div class="toolbar"><input id="regular-search" aria-label="Search Pokémon" type="search" placeholder="Search Pokémon…"></div><div style="overflow-x:auto"><table><thead><tr><th>Pokémon</th><th class="right">Teams</th><th class="right">Usage</th></tr></thead><tbody id="regular-rows"></tbody></table></div></div></section><section id="megas" class="section"><div class="section-head"><div><div class="eyebrow">SEPARATE CATEGORY</div><h2>Mega Evolution usage</h2></div><div class="hint">Mega entries are not added to regular usage</div></div><div class="panel"><div class="toolbar"><input id="mega-search" aria-label="Search Mega Evolutions" type="search" placeholder="Search Mega Evolutions…"></div><div style="overflow-x:auto"><table><thead><tr><th>Mega Pokémon</th><th class="right">Teams</th><th class="right">Usage</th></tr></thead><tbody id="mega-rows"></tbody></table></div></div></section><section id="items" class="section"><div class="section-head"><div><div class="eyebrow">HELD ITEMS</div><h2>Held item usage</h2></div><div class="hint">Percentage of 120 Pokémon slots</div></div><details class="disclosure"><summary>View all held items ▾</summary><div class="panel"><div class="toolbar"><input id="item-search" aria-label="Search held items" type="search" placeholder="Search held items…"></div><div style="overflow-x:auto"><table><thead><tr><th>Held item</th><th class="right">Count</th><th class="right">Usage</th></tr></thead><tbody id="item-rows"></tbody></table></div></div></details></section><footer class="footer">Poke Legends · Monotype Madness: Fire Frenzy · October 3, 2026</footer></main></div></div><script src="../../assets/js/sprites.js"></script><script>
 const REGULAR = [{"name": "Rotom-Heat", "count": 12}, {"name": "Arcanine (Hisui)", "count": 10}, {"name": "Charizard", "count": 9}, {"name": "Cinderace", "count": 9}, {"name": "Skeledirge", "count": 8}, {"name": "Torkoal", "count": 8}, {"name": "Blaziken", "count": 7}, {"name": "Ceruledge", "count": 7}, {"name": "Incineroar", "count": 6}, {"name": "Coalossal", "count": 5}, {"name": "Talonflame", "count": 5}, {"name": "Infernape", "count": 4}, {"name": "Armarouge", "count": 4}, {"name": "Tauros (Paldea Blaze)", "count": 4}, {"name": "Delphox", "count": 3}, {"name": "Camerupt", "count": 2}, {"name": "Volcarona", "count": 2}, {"name": "Centiskorch", "count": 2}, {"name": "Iron Moth", "count": 2}, {"name": "Houndoom", "count": 2}, {"name": "Chandelure", "count": 2}, {"name": "Marowak (Alola)", "count": 1}, {"name": "Typhlosion (Hisui)", "count": 1}, {"name": "Flareon", "count": 1}, {"name": "Darmanitan", "count": 1}, {"name": "Magmortar", "count": 1}, {"name": "Fletchinder", "count": 1}, {"name": "Salazzle", "count": 1}];
 const MEGA = [{"name": "Charizard Mega X", "count": 7}, {"name": "Delphox Mega", "count": 3}, {"name": "Charizard Mega Y", "count": 2}, {"name": "Houndoom Mega", "count": 2}, {"name": "Camerupt Mega", "count": 2}, {"name": "Chandelure Mega", "count": 1}];
