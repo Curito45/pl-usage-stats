@@ -92,9 +92,15 @@ window.PLSprites = (() => {
       `${SHOWDOWN}itemicons/${n}.png`,
       `${POKEAPI}items/${n}.png`
     ];
+    // Z-Crystals have distinct held/bag icon filenames in PokéAPI.
+    // This also handles Groundium, Darkinium, Flyinium, Incinium and Rockium Z.
     if (/ium-z$/.test(n)) {
-      result.push(`${POKESPRITE}resources/items/z-crystals/${n}--held.png`);
-      result.push(`${POKESPRITE}resources/items/z-crystals/${n}--bag.png`);
+      result.push(`${BASE}sprites/overrides/items/${n}--held.png`);
+      result.push(`${BASE}sprites/overrides/items/${n}--bag.png`);
+      result.push(`${POKEAPI}items/${n}--held.png`);
+      result.push(`${POKEAPI}items/${n}--bag.png`);
+      result.push(`${POKESPRITE}items/z-crystals/${n}--held.png`);
+      result.push(`${POKESPRITE}items/z-crystals/${n}--bag.png`);
     }
     return distinct(result);
   }
