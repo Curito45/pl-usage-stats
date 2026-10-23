@@ -21,7 +21,8 @@ window.PLSprites = (() => {
       `${SHOWDOWN}dex/growlithe-hisui.png`,
       `${SHOWDOWN}dex/growlithehisui.png`,
       `${SHOWDOWN}gen9/growlithe-hisui.png`,
-      `${SHOWDOWN}gen8/growlithe-hisui.png`
+      `${SHOWDOWN}gen8/growlithe-hisui.png`,
+      `${BASE}sprites/overrides/pokemon/growlithe-hisui.png`
     ],
     'Impidimp': [
       `${BASE}sprites/dex/impidimp.png`,
@@ -57,8 +58,8 @@ window.PLSprites = (() => {
     // Separate fallback source for Gen 7 Z-crystals (held-item artwork).
     // Override images can be placed in assets/sprites/overrides/items/.
     if (/ium-z$/.test(n)) {
-      result.push(`${POKESPRITE}resources/items/z-crystals/${n}--held.png`);
-      result.push(`${POKESPRITE}resources/items/z-crystals/${n}--bag.png`);
+      result.push(`${POKEAPI}items/${n}--held.png`);
+      result.push(`${POKEAPI}items/${n}--bag.png`);
     }
     return distinct(result);
   }
