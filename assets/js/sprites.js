@@ -29,6 +29,11 @@ window.PLSprites = (() => {
       `${SHOWDOWN}dex/impidimp.png`,
       `${SHOWDOWN}gen8/impidimp.png`,
       `${POKEAPI}pokemon/other/official-artwork/859.png`
+    ],
+    'Zorua (Hisui)': [
+      `${BASE}sprites/overrides/pokemon/zorua-hisui.png`,
+      `${BASE}sprites/home/zorua-hisui.png`,
+      `${SHOWDOWN}home/zorua-hisui.png`
     ]
   };
   const normalize = s => s.toLowerCase().trim().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
