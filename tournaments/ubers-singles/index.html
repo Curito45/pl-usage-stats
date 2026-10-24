@@ -201,7 +201,7 @@ function display(n){return ({'Goodra (Hisui)':'Goodra (Hisui)','Darmanitan (Gala
 const spritemap={
  'Kyogre Primal':'kyogre-primal','Groudon Primal':'groudon-primal',
  'Lucario Mega Z':'lucario-mega-z','Floette Eternal Mega':'floette-eternal-mega',
- 'Floette-Eternal':'floette-eternal','Darmanitan (Galar)':'darmanitangalar',
+ 'Floette-Eternal':'floette-eternal','Darmanitan (Galar)':'darmanitan-galar',
  'Giratina-Origin':'giratina-origin','Zacian-Crowned':'zacian-crowned',
  'Zamazenta-Crowned':'zamazenta-crowned','Ogerpon-Wellspring':'ogerpon-wellspring',
  'Ursaluna-Bloodmoon':'ursaluna-bloodmoon','Goodra (Hisui)':'goodra-hisui',
@@ -216,6 +216,8 @@ function sprite(name,isItem=false){
  const show='https://play.pokemonshowdown.com/sprites/';
  const candidates=[];
  const add=(url)=>{if(url&&!candidates.includes(url))candidates.push(url)};
+ // Prioritize the verified Galarian form artwork over normal Darmanitan.
+ if(name==='Darmanitan (Galar)')add('https://play.pokemonshowdown.com/sprites/home/darmanitan-galar.png');
  // The site can override any custom Mega with a local PNG later.
  // Showdown uses e.g. charizard-megay.png, not charizard-mega-y.png.
  const compact=key.replaceAll('-','');
