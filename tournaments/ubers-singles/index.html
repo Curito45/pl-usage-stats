@@ -216,6 +216,22 @@ function sprite(name,isItem=false){
  const show='https://play.pokemonshowdown.com/sprites/';
  const candidates=[];
  const add=(url)=>{if(url&&!candidates.includes(url))candidates.push(url)};
+ // Explicit verified artwork routes for Mega forms that do not use the generic form slug.
+ // These go before regular sprites and before the non-Mega species fallback.
+ const verifiedMega={
+   'Mewtwo Mega Y':[
+      'https://play.pokemonshowdown.com/sprites/home/mewtwo-megay.png',
+      'https://play.pokemonshowdown.com/sprites/dex/mewtwo-megay.png'],
+   'Floette Eternal Mega':[
+      'https://play.pokemonshowdown.com/sprites/dex/floette-mega.png',
+      'https://play.pokemonshowdown.com/sprites/gen5/floette-mega.png'],
+   'Golisopod Mega':[
+      'https://play.pokemonshowdown.com/sprites/gen5/golisopod-mega.png',
+      'https://play.pokemonshowdown.com/sprites/gen5-shiny/golisopod-mega.png'],
+   'Staraptor Mega':[
+      'https://static.rotomlabs.net/images/sprites/legends-z-a/0398-staraptor-mega.png']
+ };
+ (verifiedMega[name]||[]).forEach(add);
  // Prioritize the verified Galarian form artwork over normal Darmanitan.
  if(name==='Darmanitan (Galar)')add('https://play.pokemonshowdown.com/sprites/home/darmanitan-galar.png');
  // The site can override any custom Mega with a local PNG later.
