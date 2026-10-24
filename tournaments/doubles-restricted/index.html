@@ -248,8 +248,8 @@ function sprite(name,isItem=false){
  const add=(url)=>{if(url&&!candidates.includes(url))candidates.push(url)};
  // Prioritize the verified Galarian form artwork over normal Darmanitan.
  if(name==='Darmanitan (Galar)')add('https://play.pokemonshowdown.com/sprites/home/darmanitan-galar.png');
- // Showdown hosts Mega Zeraora in afd; normal HOME/DEX sprites can be missing.
- if(name==='Zeraora Mega')add('https://play.pokemonshowdown.com/sprites/afd/zeraora-mega.png');
+ // Use the user-supplied real Mega Zeraora PNG; never use Showdown's April Fools artwork.
+ if(name==='Zeraora Mega')add(root+'overrides/pokemon/zeraora-mega.png');
  // The site can override any custom Mega with a local PNG later.
  // Showdown uses e.g. charizard-megay.png, not charizard-mega-y.png.
  const compact=key.replaceAll('-','');
