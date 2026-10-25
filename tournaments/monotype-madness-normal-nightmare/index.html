@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#0a101b" name="theme-color"/><title>Monotype Madness: Normal Nightmare | Poke Legends</title><style>
+:root{color-scheme:dark;--bg:#0a101b;--card:#152034;--card2:#1b2a42;--line:#304059;--ink:#edf4fc;--muted:#a6b6ce;--mint:#68e0c9;--gold:#ffcb69;--blue:#7fb8ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 45% -16%,#263853 0%,transparent 55%),var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:inherit}a:hover{color:var(--mint)}main{max-width:1160px;margin:auto;padding:25px 22px 80px}header{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding:13px 0;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-weight:900;letter-spacing:.09em}.brand b{color:var(--mint)}.topnav{display:flex;gap:18px;font-size:13px;color:var(--muted)}.eyebrow{font-size:11px;font-weight:850;letter-spacing:.19em;color:var(--mint);text-transform:uppercase}.hero{padding:45px 0 27px}.event-date{color:var(--gold);font-size:15px;font-weight:750;margin:0 0 14px}.hero h1{font-size:clamp(36px,6vw,62px);line-height:1.06;letter-spacing:-.045em;margin:7px 0 12px}.muted,.desc{color:var(--muted)}.desc{max-width:690px;font-size:16px}.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.stat{padding:13px 19px;background:var(--card);border:1px solid var(--line);border-radius:12px;min-width:135px}.stat strong{font-size:24px;display:block}.stat small{color:var(--muted)}section{margin-top:45px;scroll-margin-top:15px}h2{font-size:25px;letter-spacing:-.025em;margin:0 0 5px}.secthead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:19px;flex-wrap:wrap}.panel,.winner,.tile{border:1px solid var(--line);background:var(--card);border-radius:16px}.archivegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px}.tile{text-decoration:none;padding:24px;display:flex;flex-direction:column;gap:10px;min-height:200px;transition:transform .18s,border-color .18s}.tile:hover{transform:translateY(-2px);border-color:var(--mint);color:var(--ink)}.tile h2{margin:0}.button{display:inline-flex;gap:6px;width:max-content;padding:9px 14px;border-radius:9px;color:#0a1921;background:var(--mint);font-weight:800;text-decoration:none}.button:hover{color:#0a1921;filter:brightness(1.07)}.podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.winner{overflow:hidden;padding:17px}.winner.first{border-color:#92713b;background:linear-gradient(150deg,#2d2b29,var(--card) 60%)}.medal{font-weight:800;font-size:12px;color:var(--gold)}.winner h3{font-size:clamp(17px,2.2vw,24px);margin:6px 0 13px;overflow-wrap:anywhere;line-height:1.15}.teamgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.moncard{border-radius:11px;padding:10px 4px;text-align:center;background:var(--card2);border:1px solid #344660;min-width:0}.moncard img{width:min(100%,75px);height:72px;object-fit:contain;display:block;margin:0 auto}.moncard strong{display:block;font-size:12px;overflow-wrap:anywhere;line-height:1.2}.moncard small{font-size:10px;color:var(--muted);overflow-wrap:anywhere;display:block}.details{margin-top:14px}.details summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--mint)}.sets{margin-top:13px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.set{padding:11px 12px;background:#0c1626;border-radius:9px;font-size:12px}.set h4{margin:0 0 6px;font-size:13px}.set p{margin:2px 0;color:var(--muted)}.set ul{margin:5px 0 0;padding-left:18px}.barlinks{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.barlinks a{padding:8px 13px;border:1px solid var(--line);background:var(--card2);border-radius:9px;text-decoration:none;font-size:13px}.barlinks a:hover{border-color:var(--mint)}.panel{overflow:hidden}.toolbar{padding:13px;border-bottom:1px solid var(--line)}input{width:100%;max-width:320px;padding:10px 12px;background:#0c1726;color:var(--ink);border:1px solid #3a506c;border-radius:8px;font:inherit}table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;background:#1d2d44;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}th,td{padding:9px 16px;border-bottom:1px solid #273a52}tbody tr:hover{background:#1c2a3d}.right{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.cellname{display:flex;align-items:center;gap:12px;font-weight:650}.cellname img{width:46px;height:46px;object-fit:contain}.cellname .itemicon{width:32px;height:32px;image-rendering:pixelated}.rank{min-width:24px;color:var(--muted);font-size:12px}.usage{display:flex;align-items:center;justify-content:end;gap:12px}.meter{width:104px;height:7px;background:#34445b;border-radius:10px;overflow:hidden}.meter span{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--mint))}.pct{min-width:54px;text-align:right;font-weight:700}.note{font-size:12px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:20px;margin-top:55px;color:var(--muted);font-size:12px}@media(max-width:850px){.podium{grid-template-columns:1fr}.teamgrid{grid-template-columns:repeat(6,minmax(0,1fr))}.moncard img{height:64px}.winner h3{font-size:22px}}@media(max-width:570px){main{padding:16px 12px 50px}.teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.sets{grid-template-columns:1fr}.meter{width:40px}.cellname{gap:6px}th,td{padding:8px}.cellname img{width:36px;height:36px}.stat{min-width:100px;padding:11px}.topnav{gap:9px}.winner{padding:13px}}
+
+
+:root{--bg:#0c0d1b;--card:#18172c;--card2:#24213b;--line:#45405a;--ink:#fbf7ff;--muted:#b7afc9;--mint:#ffc24a;--gold:#ffc24a;--blue:#da72ee}
+body{background:radial-gradient(ellipse at 75% -4%,#332149 0,transparent 46%),radial-gradient(ellipse at 6% 28%,#15243f 0,transparent 42%),var(--bg)}
+header{min-height:84px}header .brand{display:flex;align-items:center;gap:10px;letter-spacing:.04em;font-size:16px}header .brand img{width:62px;height:62px;object-fit:contain}header .brand b{color:var(--gold)}.topnav a{text-decoration:none;font-weight:700}.topnav a:hover{color:var(--gold)}
+.eyebrow{color:var(--gold)}.hero{padding:55px 0 35px}.hero h1{font-size:clamp(40px,6vw,67px);letter-spacing:-.055em}.hero h1 span{color:var(--gold)!important}.event-date{color:#e5d3f1;font-weight:650;margin-top:0}.stat,.panel,.winner{background:linear-gradient(145deg,#242039,#171629 70%);border-color:var(--line)}.winner.first{background:linear-gradient(140deg,#3c2c30,#1a172b 65%);border-color:#b18849}.button,.barlinks a{border-radius:11px}.barlinks a{background:#29233e}.barlinks a:hover{border-color:var(--gold)}.moncard{background:#282440;border-color:#45405b}.set{background:#101226}.details summary{color:var(--gold)}th{background:#26213b}th,td{border-color:#383149}tbody tr:hover{background:#29243f}.meter{background:#39334d}.meter span{background:linear-gradient(90deg,#dd75ec,#ffc24a)}input{background:#101222;border-color:#51486a}input:focus{outline:2px solid #ffc24a55}.stats .stat strong{color:#fff}
+@media(max-width:570px){header .brand img{width:50px;height:50px}header .brand{font-size:13px}header{min-height:72px}}
+
+
+.pokemon-entry{cursor:pointer}.pokemon-entry:focus-visible{outline:2px solid var(--mint);outline-offset:-3px}.pokemon-entry[aria-selected="true"]{background:rgba(255,193,76,.12)}.pokemon-entry:hover{background:rgba(255,193,76,.07)}
+.details-panel{background:linear-gradient(130deg,#251f3b,#17182d);border:1px solid #675277;border-radius:16px;padding:20px;margin:0 0 16px;scroll-margin-top:16px}.details-panel[hidden]{display:none}.detail-top{display:flex;align-items:center;gap:16px}.detail-top img{height:85px;width:85px;object-fit:contain}.detail-top h3{font-size:23px;margin:0}.detail-sub{font-size:13px;color:var(--muted)}.detail-close{margin-left:auto;align-self:flex-start;background:#332943;border:1px solid #665377;border-radius:8px;color:#f5edff;padding:7px 11px;cursor:pointer}.detail-columns{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:20px}.detail-columns h4{font-size:14px;margin:0 0 11px}.detail-stat{display:flex;align-items:center;gap:10px;min-height:44px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.09)}.detail-stat img{width:36px;height:36px;object-fit:contain}.detail-stat-content{flex:1;min-width:0}.detail-stat-name{font-weight:650;font-size:13px}.detail-stat-meta{font-size:11px;color:var(--muted)}.detail-empty{color:var(--muted);font-size:13px}.item-disclosure{border:1px solid var(--line);border-radius:16px;overflow:hidden}.item-disclosure>summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:17px 20px;background:var(--card);font-weight:750}.item-disclosure>summary::-webkit-details-marker{display:none}.item-disclosure>summary::after{content:'▾';font-size:18px;color:var(--gold)}.item-disclosure[open]>summary::after{content:'▴'}.item-disclosure>summary:hover{background:var(--card2)}.item-disclosure .panel{border:0;border-radius:0}.item-summary-hint{font-weight:400;color:var(--muted);font-size:12px}
+@media(max-width:620px){.detail-columns{grid-template-columns:1fr}.detail-top img{width:65px;height:65px}.details-panel{padding:14px}}
+
+
+main{max-width:1370px}
+.tournament-layout{display:grid;grid-template-columns:220px minmax(0,1fr);align-items:start;gap:26px;margin-top:30px}
+.tournament-content{min-width:0}
+.tournament-content>section:first-child{margin-top:0}
+.tournament-sidebar{position:sticky;top:22px;align-self:start;max-height:calc(100vh - 44px);overflow-y:auto;border:1px solid var(--line);background:linear-gradient(155deg,#242039,#171629 75%);border-radius:16px;padding:18px;scrollbar-width:thin}
+.sidebar-heading{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--gold);font-weight:800;margin-bottom:15px}
+.sidebar-links{display:grid;gap:7px}
+.sidebar-link{display:flex;align-items:center;gap:10px;color:var(--muted);text-decoration:none;border:1px solid transparent;border-radius:10px;padding:11px 10px;font-weight:700;font-size:13px;transition:background .15s,border-color .15s,color .15s}
+.sidebar-link:hover,.sidebar-link.active{color:#fff;background:#393049;border-color:#80628c}
+.sidebar-link.active{box-shadow:inset 3px 0 0 var(--gold)}
+.sidebar-separator{border:0;border-top:1px solid var(--line);margin:18px 0}
+.sidebar-summary{display:grid;grid-template-columns:1fr;gap:11px}
+.sidebar-summary .stat{min-width:0;margin:0;padding:10px 12px;background:#211e35}
+.sidebar-summary .stat strong{font-size:23px;line-height:1.25}
+.sidebar-summary .stat small{font-size:11px}
+.mobile-section-nav{display:none}
+.tournament-content section{scroll-margin-top:25px}
+@media(max-width:960px){
+ .tournament-layout{display:block;margin-top:10px}
+ .tournament-sidebar{display:none}
+ .mobile-section-nav{display:flex;gap:7px;position:sticky;top:0;z-index:40;overflow-x:auto;overscroll-behavior-x:contain;white-space:nowrap;margin:0 -16px 20px;padding:10px 16px;background:rgba(18,16,32,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);scrollbar-width:none}
+ .mobile-section-nav::-webkit-scrollbar{display:none}
+ .mobile-section-nav .sidebar-link{white-space:nowrap;background:#29233e;border:1px solid #45405a;padding:9px 13px;flex-shrink:0}
+ .mobile-section-nav .sidebar-link.active{background:#4a3357;border-color:#b18ac1;box-shadow:inset 0 -2px 0 var(--gold)}
+ .tournament-content section{scroll-margin-top:83px}
+ .tournament-content>section:first-child{margin-top:0}
+}
+@media(max-width:570px){.mobile-section-nav{margin-left:-12px;margin-right:-12px;padding-left:12px;padding-right:12px}.hero{padding-bottom:14px}}
+
+
+.rules-disclosure{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#242039,#171629 70%)}
+.rules-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:19px 22px;cursor:pointer;list-style:none;font-weight:750}
+.rules-disclosure>summary::-webkit-details-marker{display:none}
+.rules-disclosure>summary::after{content:'▾';font-size:20px;color:var(--gold)}
+.rules-disclosure[open]>summary::after{content:'▴'}
+.rules-disclosure>summary:hover{background:#29243f}
+.rules-subtitle{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:3px}
+.rules-body{padding:0 22px 22px;border-top:1px solid var(--line)}
+.rules-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.rules-body h3{font-size:14px;color:var(--gold);margin:20px 0 9px}
+.rules-body ul{margin:0;padding-left:20px;color:var(--ink)}.rules-body li{margin:5px 0}
+.rules-body a{color:var(--gold);text-underline-offset:3px}
+.rules-ban-list{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0 0;list-style:none;padding:0!important}
+.rules-ban-list li{background:#2e2841;border:1px solid #504361;border-radius:7px;padding:5px 9px;font-size:12px;margin:0}
+.rules-ban-section{margin-top:14px}.rules-ban-section h4{font-size:13px;margin:0 0 8px;color:#e9daf4}
+@media(max-width:620px){.rules-columns{grid-template-columns:1fr;gap:0}.rules-disclosure>summary{padding:16px}.rules-body{padding:0 16px 16px}}
+
+
+main{padding-top:10px}
+header{min-height:64px;padding:7px 0}
+header .brand img{width:46px;height:46px}
+.hero{padding:18px 0 10px}
+.hero .eyebrow{font-size:10px;letter-spacing:.15em}
+.hero h1{font-size:clamp(30px,3.7vw,44px);line-height:1.08;margin:4px 0}
+.hero .event-date{font-size:13px;margin:2px 0 0}
+.hero .desc{display:none}
+.tournament-layout{margin-top:14px;gap:18px;grid-template-columns:200px minmax(0,1fr)}
+.tournament-sidebar{top:12px;padding:13px;max-height:calc(100vh - 24px)}
+.sidebar-heading{margin-bottom:8px}
+.sidebar-links{gap:3px}
+.sidebar-link{padding:8px 9px}
+.sidebar-separator{margin:12px 0}
+.sidebar-summary{gap:7px}
+.sidebar-summary .stat{padding:7px 11px}
+.sidebar-summary .stat strong{font-size:20px}
+.tournament-content section{margin-top:30px}
+.tournament-content>section:first-of-type{margin-top:0}
+.secthead{margin-bottom:10px}
+.secthead h2{font-size:23px}
+.winner{padding:12px}
+.winner h3{font-size:clamp(16px,1.6vw,21px);margin:3px 0 9px}
+.podium{gap:10px}
+.teamgrid{gap:6px}
+.moncard{padding:5px 3px 6px;border-radius:9px}
+.moncard img{height:55px;width:min(100%,65px)}
+.moncard strong{font-size:11px;line-height:1.15}
+.moncard small{font-size:10px;line-height:1.15;margin-top:2px}
+.details{margin-top:10px}
+@media(max-width:960px){
+ .tournament-layout{margin-top:0;display:block}
+ .mobile-section-nav{margin-bottom:12px}
+ .hero{padding:20px 0 9px}
+ .podium{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .winner h3{font-size:16px}
+ .moncard img{height:48px}
+}
+@media(max-width:720px){
+ .podium{grid-template-columns:1fr}
+ .teamgrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+ .moncard img{height:52px}
+ .hero h1{font-size:34px}
+}
+@media(max-width:520px){
+ header .brand img{width:42px;height:42px}
+ .teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .moncard img{height:59px}
+}
+
+
+.tournament-switcher{margin:38px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+.tournament-switcher-title{font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--gold);margin:0 0 13px}
+.tournament-switcher-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.tournament-switcher-link,.tournament-switcher-empty{min-height:94px;padding:17px;border-radius:13px;border:1px solid var(--line);background:linear-gradient(140deg,#28233e,#171629);display:flex;flex-direction:column;justify-content:center;gap:4px}
+.tournament-switcher-link{text-decoration:none;transition:border-color .15s,transform .15s}
+.tournament-switcher-link:hover,.tournament-switcher-link:focus-visible{border-color:var(--gold);color:var(--ink);transform:translateY(-2px)}
+.tournament-switcher-link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tournament-switcher-direction{font-size:11px;font-weight:750;color:var(--gold)}
+.tournament-switcher-name{font-size:16px;font-weight:800;line-height:1.3}
+.tournament-switcher-date{font-size:12px;color:var(--muted)}
+.tournament-switcher-link.newer,.tournament-switcher-empty.newer{text-align:right;align-items:flex-end}
+.tournament-switcher-empty{border-style:dashed;opacity:.53}
+.tournament-switcher-empty .tournament-switcher-name{font-size:13px;color:var(--muted);font-weight:600}
+@media(max-width:560px){.tournament-switcher-grid{gap:8px}.tournament-switcher-link,.tournament-switcher-empty{padding:12px;min-height:100px}.tournament-switcher-name{font-size:13px}.tournament-switcher-direction{font-size:10px}}
+
+
+.quick-tournament-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 12px}
+.quick-tournament-link,.quick-tournament-empty{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:58px;padding:10px 13px;border:1px solid var(--line);border-radius:11px;background:rgba(36,33,59,.58);text-decoration:none;min-width:0}
+.quick-tournament-link:hover,.quick-tournament-link:focus-visible{border-color:var(--gold);background:var(--card2);color:var(--ink)}
+.quick-tournament-link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.quick-tournament-overline{color:var(--gold);text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:850}
+.quick-tournament-name{font-size:13px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.quick-tournament-date{font-size:11px;color:var(--muted)}
+.quick-tournament-empty{opacity:.38;border-style:dashed}
+.quick-tournament-link.right,.quick-tournament-empty.right{text-align:right;align-items:flex-end}
+@media(max-width:570px){.quick-tournament-nav{gap:6px}.quick-tournament-link,.quick-tournament-empty{padding:9px;min-height:56px}.quick-tournament-name{font-size:11px}.quick-tournament-overline{font-size:9px}.quick-tournament-date{font-size:10px}}
+
+
+.hero{position:relative;min-height:166px;padding:18px 0 15px 175px!important;margin-top:4px!important;margin-bottom:4px!important}
+.hero-poster{position:absolute;left:0;top:12px;width:150px;height:150px;object-fit:cover;border:1px solid #615471;border-radius:12px}
+.hero h1{font-size:clamp(29px,3.6vw,45px)!important;line-height:1.12;margin-bottom:7px!important}
+@media(max-width:700px){.hero{padding-left:107px!important;min-height:125px}.hero-poster{width:95px;height:105px}.hero h1{font-size:27px!important}}
+@media(max-width:380px){.hero{padding-left:0!important;padding-top:125px!important}.hero-poster{top:8px}}
+
+@media(min-width:721px){#podium.podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}#podium>.winner{min-width:0;grid-column:auto}}
+.mega-entry{cursor:pointer}.mega-entry:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+</style>
+</head><body><main><header><a class="brand" href="/"><img alt="Poke Legends logo" src="../../assets/default-logo.png"/><span>POKE <b>LEGENDS</b></span></a><nav class="topnav"><a href="/">Tournaments</a><a href="https://store.poke-legends.com/">Store ↗</a></nav></header><div class="hero"><img alt="Normal Nightmare tournament artwork" class="hero-poster" src="../../assets/tournaments/normal-nightmare.png"/><div class="eyebrow">POKE LEGENDS · TOURNAMENT</div><h1>Monotype Madness: Normal Nightmare</h1><p class="event-date">📅 <time datetime="2026-09-05">September 5, 2026</time></p><p class="desc">Normal-type teams and separate Mega Evolution usage statistics.</p></div><div class="tournament-layout"><aside aria-label="Tournament sections" class="tournament-sidebar"><div class="sidebar-heading">Normal Nightmare · Navigation</div><nav aria-label="Jump to tournament section" class="sidebar-links"><a class="sidebar-link" data-section="results" href="#results">🏆 <span>Podium</span></a><a class="sidebar-link" data-section="rules" href="#rules">📜 <span>Rules &amp; Format</span></a><a class="sidebar-link" data-section="pokemon" href="#pokemon">◈ <span>Pokémon Usage</span></a><a class="sidebar-link" data-section="megas" href="#megas">✦ Mega Usage</a><a class="sidebar-link" data-section="items" href="#items">▣ <span>Item Usage</span></a></nav><hr class="sidebar-separator"/><div class="sidebar-heading">Tournament overview</div><div class="sidebar-summary"><div class="stat"><strong>23</strong><small>Teams</small></div><div class="stat"><strong>138</strong><small>Pokémon slots</small></div><div class="stat"><strong>36</strong><small>Pokémon forms</small></div></div></aside><div class="tournament-content"><nav aria-label="Tournament navigation" class="mobile-section-nav"><a class="sidebar-link" data-section="results" href="#results">🏆 Podium</a><a class="sidebar-link" data-section="rules" href="#rules">📜 Rules</a><a class="sidebar-link" data-section="pokemon" href="#pokemon">◈ Pokémon Usage</a><a class="sidebar-link" data-section="megas" href="#megas">✦ Megas</a><a class="sidebar-link" data-section="items" href="#items">▣ Item Usage</a></nav><nav class="quick-tournament-nav" aria-label="Adjacent tournaments"><a class="quick-tournament-link" href="/tournaments/ubers-singles/"><span class="quick-tournament-overline">← Next tournament</span><span class="quick-tournament-name">Ubers Singles</span><span class="quick-tournament-date">September 12, 2026</span></a><div class="quick-tournament-empty right"><span class="quick-tournament-overline">Previous tournament →</span><span class="quick-tournament-name">No older tournament</span></div></nav><section id="results"><div class="secthead"><div><div class="eyebrow">FINAL PLACEMENTS</div><h2>Tournament podium</h2></div></div><div class="podium" id="podium"></div></section><section id="rules"><div class="secthead"><div><div class="eyebrow">EVENT INFORMATION</div><h2>Rules &amp; Format</h2></div></div><details class="rules-disclosure"><summary><span>View tournament rules<span class="rules-subtitle">Battle format, allowed mechanics, clauses and restrictions</span></span></summary><div class="rules-body"><div class="rules-columns"><div><h3>Format</h3><ul><li>Singles · 6v6</li><li>OU (Gym Rules)</li><li>Double elimination</li><li>Hosted on Ascension</li><li>Required gimmick items provided</li></ul></div><div><h3>Rules</h3><ul><li>All Pokémon must be Normal type</li><li>No Legendary Pokémon</li><li>Mega Evolution allowed</li><li>Z-Moves allowed</li><li>No Dynamax</li><li>No Terastallization</li><li>Item Clause</li><li>Sleep Clause</li><li>Species Clause</li><li>Stall Clause (1 Pokémon)</li><li>Standard Gym Rules (OU)</li><li>Mega Evolutions must be Normal type before and after Mega Evolving</li><li>Population Bomb is banned</li></ul></div></div></div></details></section><section id="pokemon"><div class="secthead"><div><div class="eyebrow">PICK RATES</div><h2>Pokémon usage</h2></div><span class="note">Click a Pokémon for items and teammates · 23 teams</span></div><div aria-live="polite" class="details-panel" hidden="" id="pokemon-detail"></div><div class="panel"><div class="toolbar"><input aria-label="Search Pokémon" id="monsearch" placeholder="Search Pokémon…" type="search"/></div><div style="overflow-x:auto"><table><thead><tr><th>Pokémon</th><th class="right">Teams</th><th class="right">Usage</th></tr></thead><tbody id="monrows"></tbody></table></div></div></section><section id="megas"><div class="secthead"><div><div class="eyebrow">SEPARATE CATEGORY</div><h2>Mega Evolution usage</h2></div><span class="note">Mega forms do not increase regular Pokémon usage</span></div><div class="panel"><div class="toolbar"><input aria-label="Search Mega Evolutions" id="megasearch" placeholder="Search Mega Evolutions…" type="search"/></div><div style="overflow-x:auto"><table><thead><tr><th>Mega Pokémon</th><th class="right">Teams</th><th class="right">Usage</th></tr></thead><tbody id="megarows"></tbody></table></div></div></section><section id="items"><div class="secthead"><div><div class="eyebrow">HELD ITEMS</div><h2>Held item usage</h2></div><span class="note">Percentage of 138 submitted Pokémon slots</span></div><details class="item-disclosure"><summary><span>View all held items</span><span class="item-summary-hint">Click to expand or collapse</span></summary><div class="panel"><div class="toolbar"><input aria-label="Search items" id="itemsearch" placeholder="Search items…" type="search"/></div><div style="overflow-x:auto"><table><thead><tr><th>Held item</th><th class="right">Count</th><th class="right">Usage</th></tr></thead><tbody id="itemrows"></tbody></table></div></div></details></section></div></div><footer>Poke Legends · Monotype Madness: Normal Nightmare · Tournament results and submitted-team statistics.</footer></main><script src="../../assets/js/sprites.js"></script>
+<script>const TEAMS = [[{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Porygon2","item":"Eviolite"},{"pokemon":"Farigiraf","item":"Focus Sash"},{"pokemon":"Drampa","item":"Drampanite"},{"pokemon":"Bewear","item":"Life Orb"},{"pokemon":"Oranguru","item":"Sitrus Berry"}],[{"pokemon":"Staraptor","item":"None"},{"pokemon":"Snorlax","item":"Rocky Helmet"},{"pokemon":"Cyclizar","item":"Heavy-Duty Boots"},{"pokemon":"Cinccino","item":"Loaded Dice"},{"pokemon":"Zoroark (Hisui)","item":"Focus Band"},{"pokemon":"Ursaluna","item":"Flame Orb"}],[{"pokemon":"Drampa","item":"Drampanite"},{"pokemon":"Kangaskhan","item":"Assault Vest"},{"pokemon":"Porygon2","item":"Eviolite"},{"pokemon":"Farigiraf","item":"Throat Spray"},{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Zoroark (Hisui)","item":"Focus Sash"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Farigiraf","item":"Sitrus Berry"},{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Bewear","item":"Leftovers"},{"pokemon":"Zoroark (Hisui)","item":"Life Orb"},{"pokemon":"Staraptor","item":"Rocky Helmet"}],[{"pokemon":"Obstagoon","item":"Flame Orb"},{"pokemon":"Indeedee","item":"Choice Scarf"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Bewear","item":"Rocky Helmet"},{"pokemon":"Blissey","item":"Leftovers"},{"pokemon":"Porygon-Z","item":"Normalium Z"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Smeargle","item":"Focus Sash"},{"pokemon":"Bewear","item":"Chople Berry"},{"pokemon":"Staraptor","item":"Choice Scarf"},{"pokemon":"Girafarig","item":"Eviolite"},{"pokemon":"Porygon-Z","item":"Salac Berry"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Bewear","item":"Rocky Helmet"},{"pokemon":"Farigiraf","item":"Light Clay"},{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Zoroark (Hisui)","item":"Fightinium Z"},{"pokemon":"Ditto","item":"Choice Scarf"}],[{"pokemon":"Indeedee","item":"Choice Scarf"},{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Porygon-Z","item":"Normalium Z"},{"pokemon":"Cyclizar","item":"Heavy-Duty Boots"},{"pokemon":"Chansey","item":"Eviolite"}],[{"pokemon":"Smeargle","item":"Focus Sash"},{"pokemon":"Staraptor","item":"Choice Scarf"},{"pokemon":"Porygon-Z","item":"Normalium Z"},{"pokemon":"Porygon2","item":"Eviolite"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Ursaluna","item":"Flame Orb"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Farigiraf","item":"Throat Spray"},{"pokemon":"Porygon-Z","item":"Normalium Z"},{"pokemon":"Greedent","item":"Sitrus Berry"},{"pokemon":"Cyclizar","item":"Focus Sash"},{"pokemon":"Ditto","item":"Choice Scarf"}],[{"pokemon":"Tauros","item":"Metronome"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Dubwool","item":"Leftovers"},{"pokemon":"Zoroark (Hisui)","item":"Focus Sash"},{"pokemon":"Grafaiai","item":"Toxic Orb"},{"pokemon":"Dunsparce","item":"Eviolite"}],[{"pokemon":"Staraptor","item":"Heavy-Duty Boots"},{"pokemon":"Chansey","item":"Eviolite"},{"pokemon":"Porygon-Z","item":"Normalium Z"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Obstagoon","item":"Flame Orb"},{"pokemon":"Indeedee","item":"Choice Scarf"}],[{"pokemon":"Snorlax","item":"Chesto Berry"},{"pokemon":"Kangaskhan","item":"Silk Scarf"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Miltank","item":"Rocky Helmet"},{"pokemon":"Zoroark (Hisui)","item":"Focus Sash"},{"pokemon":"Swellow","item":"Flame Orb"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Ditto","item":"Choice Scarf"},{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Staraptor","item":"Heavy-Duty Boots"},{"pokemon":"Chansey","item":"Eviolite"},{"pokemon":"Bewear","item":"Rocky Helmet"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Ursaluna","item":"Flame Orb"},{"pokemon":"Farigiraf","item":"Light Clay"},{"pokemon":"Chansey","item":"Eviolite"},{"pokemon":"Dudunsparce","item":"Throat Spray"},{"pokemon":"Staraptor","item":"Choice Scarf"}],[{"pokemon":"Smeargle","item":"Focus Sash"},{"pokemon":"Chansey","item":"Eviolite"},{"pokemon":"Bewear","item":"Leftovers"},{"pokemon":"Staraptor","item":"Heavy-Duty Boots"},{"pokemon":"Ditto","item":"Choice Scarf"},{"pokemon":"Pyroar","item":"Pyroarite"}],[{"pokemon":"Kangaskhan","item":"Silk Scarf"},{"pokemon":"Pidgeot","item":"Pidgeotite"},{"pokemon":"Ditto","item":"Choice Scarf"},{"pokemon":"Braviary","item":"Fighting Gem"},{"pokemon":"Staraptor","item":"White Herb"},{"pokemon":"Cinccino","item":"Focus Sash"}],[{"pokemon":"Smeargle","item":"Focus Sash"},{"pokemon":"Zoroark (Hisui)","item":"Choice Scarf"},{"pokemon":"Farigiraf","item":"Leftovers"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Snorlax","item":"Snorlium Z"},{"pokemon":"Slaking","item":"Choice Band"}],[{"pokemon":"Drampa","item":"Drampanite"},{"pokemon":"Bewear","item":"Leftovers"},{"pokemon":"Dubwool","item":"Chesto Berry"},{"pokemon":"Porygon2","item":"Eviolite"},{"pokemon":"Heliolisk","item":"Life Orb"},{"pokemon":"Grafaiai","item":"Heat Rock"}],[{"pokemon":"Bewear","item":"Mirror Herb"},{"pokemon":"Smeargle","item":"Choice Scarf"},{"pokemon":"Porygon2","item":"Eviolite"},{"pokemon":"Miltank","item":"Chople Berry"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Toucannon","item":"Focus Sash"}],[{"pokemon":"Farigiraf","item":"Safety Goggles"},{"pokemon":"Porygon-Z","item":"Normalium Z"},{"pokemon":"Ditto","item":"Life Orb"},{"pokemon":"Chansey","item":"Eviolite"},{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Ursaluna","item":"Flame Orb"}],[{"pokemon":"Lopunny","item":"Lopunnite"},{"pokemon":"Eevee","item":"Eevium Z"},{"pokemon":"Kangaskhan","item":"Life Orb"},{"pokemon":"Farigiraf","item":"Sitrus Berry"},{"pokemon":"Snorlax","item":"Leftovers"},{"pokemon":"Smeargle","item":"Focus Sash"}],[{"pokemon":"Porygon-Z","item":"Normalium Z"},{"pokemon":"Bewear","item":"Rocky Helmet"},{"pokemon":"Indeedee","item":"Choice Scarf"},{"pokemon":"Chansey","item":"Eviolite"},{"pokemon":"Staraptor","item":"Heavy-Duty Boots"},{"pokemon":"Lopunny","item":"Lopunnite"}]];
+const WINNERS = [{"place":1,"name":"SGB_64","team":["Smeargle","Chansey","Bewear","Staraptor","Ditto","Pyroar"]},{"place":2,"name":"Luxter18","team":["Staraptor","Chansey","Porygon-Z","Lopunny","Obstagoon","Indeedee"]},{"place":3,"name":"I_Sigh","team":["Smeargle","Staraptor","Porygon-Z","Porygon2","Lopunny","Ursaluna"]}];
+const SECONDS = {"Staraptor":"Heavy-Duty Boots","Chansey":"Eviolite","Porygon-Z":"Normalium Z","Lopunny":"Lopunnite","Obstagoon":"Flame Orb","Indeedee":"Choice Scarf"};
+const FIRSTS = {"Smeargle":{"item":"Focus Sash","ability":"Own Tempo","evs":"252 HP / 4 SpD / 252 Spe","nature":"Timid","ivs":"0 Atk","moves":["Sunny Day","Sticky Web","Stealth Rock","Parting Shot"]},"Chansey":{"item":"Eviolite","ability":"Natural Cure","evs":"248 HP / 252 Def / 8 SpD","nature":"Bold","ivs":"0 Atk","moves":["Seismic Toss","Soft-Boiled","Thunder Wave","Teleport"]},"Bewear":{"item":"Leftovers","ability":"Fluffy","evs":"252 HP / 252 Def / 4 SpD","nature":"Impish","moves":["Drain Punch","Ice Punch","Bulk Up","Darkest Lariat"]},"Staraptor":{"item":"Heavy-Duty Boots","ability":"Reckless","evs":"252 Atk / 4 SpD / 252 Spe","nature":"Jolly","moves":["Brave Bird","Close Combat","Defog","Final Gambit"]},"Pyroar":{"item":"Pyroarite","ability":"Rivalry","evs":"252 HP / 252 SpA / 4 SpD","nature":"Serious","ivs":"0 Atk","moves":["Flamethrower","Overheat","Earth Power"]},"Ditto":{"item":"Choice Scarf","ability":"Imposter","evs":"248 HP / 252 Def / 8 SpD","nature":"Bold","ivs":"30 Atk","moves":["Transform"]}};
+const THIRDS = {};
+const MEGA_STONES = {"Lopunnite":"Lopunny Mega","Drampanite":"Drampa Mega","Pyroarite":"Pyroar Mega","Pidgeotite":"Pidgeot Mega"};
+const TOTAL = TEAMS.length;
+const MEGA_COUNTS = new Map();
+TEAMS.flat().forEach(mon => { const mega = MEGA_STONES[mon.item]; if (mega) MEGA_COUNTS.set(mega,(MEGA_COUNTS.get(mega)||0)+1); });
+function el(tag,cls,txt){const node=document.createElement(tag);if(cls)node.className=cls;if(txt!==undefined)node.textContent=txt;return node}
+function percent(n,d=TOTAL){return (100*n/d).toFixed(1)+'%'}
+function fallbackImage(name){return window.PLSprites.image(name)}
+function pokemonImage(name){
+ const specials={
+  'Arcanine (Hisui)':['arcanine-hisui','arcaninehisui'],
+  'Tauros (Paldea Blaze)':['tauros-paldeablaze','tauros-paldea-blaze','taurospaldeablaze'],
+  'Rotom-Heat':['rotomheat','rotom-heat'],
+  'Marowak (Alola)':['marowak-alola','marowakalola'],
+  'Typhlosion (Hisui)':['typhlosion-hisui','typhlosionhisui'],
+ 'Zoroark (Hisui)':['zoroark-hisui','zoroarkhisui']
+ };
+ const megaNames={
+  'Charizard Mega X':['charizard-mega-x','charizard-megax','charizardmegax'],
+  'Charizard Mega Y':['charizard-mega-y','charizard-megay','charizardmegay'],
+  'Delphox Mega':['delphox-mega','delphoxmega'],
+  'Houndoom Mega':['houndoom-mega','houndoommega'],
+  'Camerupt Mega':['camerupt-mega','cameruptmega'],
+  'Chandelure Mega':['chandelure-mega','chandeluremega'],
+ 'Lopunny Mega':['lopunny-mega','lopunnymega'],
+ 'Drampa Mega':['drampa-mega','drampamega'],
+ 'Pyroar Mega':['pyroar-mega','pyroarmega'],
+ 'Pidgeot Mega':['pidgeot-mega','pidgeotmega']
+ };
+ const aliases=megaNames[name]||specials[name];
+ if(!aliases) return fallbackImage(name);
+ const local=['/assets/sprites/overrides/pokemon/','/assets/sprites/dex/','/assets/sprites/home/'];
+ const remote=['https://play.pokemonshowdown.com/sprites/dex/','https://play.pokemonshowdown.com/sprites/home/','https://play.pokemonshowdown.com/sprites/gen9/'];
+ const candidates=[...local,...remote].flatMap(base=>aliases.map(alias=>base+alias+'.png'));
+ const im=el('img'); im.loading='lazy';im.alt=name;
+ let index=0;im.onerror=()=>{index++;if(index<candidates.length)im.src=candidates[index];else {im.onerror=null;const substitute=megaNames[name]?name.split(' Mega')[0]:name;const base=fallbackImage(substitute);im.src=base.src;base.onerror=()=>{im.src=base.src};}};
+ im.src=candidates[0];return im;
+}
+function podium(){
+ const container=document.getElementById('podium');container.replaceChildren();
+ WINNERS.forEach(w=>{
+   const card=el('article','winner'+(w.place===1?' first':''));
+   card.append(el('div','medal',['🥇 CHAMPION','🥈 RUNNER-UP','🥉 THIRD PLACE'][w.place-1]),el('h3','',w.name)); if(!w.team.length)card.append(el('p','note','Team roster not yet matched to player submission.')); 
+   const grid=el('div','teamgrid');
+   w.team.forEach(mon=>{
+     const tile=el('div','moncard');
+     const set=w.place===1?FIRSTS[mon]:(w.place===3?THIRDS[mon]:null);
+     const heldItem=w.place===2?SECONDS[mon]:set?.item;
+
+
+     const displayName=MEGA_STONES[heldItem]||mon;
+     tile.append(pokemonImage(displayName),el('strong','',mon));
+     if(heldItem)tile.append(el('small','',heldItem));
+     grid.append(tile);
+   });card.append(grid);
+   const sets=w.place===1?FIRSTS:w.place===3?THIRDS:null;
+   if(sets && Object.keys(sets).length){const details=el('details','details');details.append(el('summary','','Show full movesets'));const list=el('div','sets');
+      Object.entries(sets).forEach(([name,d])=>{const block=el('div','set');block.append(el('h4','',name+' @ '+d.item));
+        block.append(el('p','',`Ability: ${d.ability||'Not supplied'}`),el('p','',`${d.nature||'Unspecified'} Nature`),el('p','',`EVs: ${d.evs||'Not supplied'}`));
+        if(d.ivs)block.append(el('p','',`IVs: ${d.ivs}`));
+        const ul=el('ul');(d.moves||[]).forEach(move=>ul.append(el('li','',move)));block.append(ul);list.append(block);
+      });details.append(list);card.append(details);
+   }
+   container.append(card);
+ });
+}
+function baseSpecies(name){
+ const explicit={'Lopunny Mega':'Lopunny','Drampa Mega':'Drampa','Pyroar Mega':'Pyroar','Pidgeot Mega':'Pidgeot'};
+ return explicit[name]||name;
+}
+function ranked(prop){const count=new Map();TEAMS.flat().forEach(mon=>{const name=prop==='pokemon'?baseSpecies(mon.pokemon):mon[prop];count.set(name,(count.get(name)||0)+1)});return [...count].map(([name,count])=>({name,count})).sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name))}
+function detail(name,isMega=false){
+ const panel=document.getElementById('pokemon-detail');panel.replaceChildren();panel.hidden=false;
+ const matched=TEAMS.filter(team=>team.some(mon=>isMega?MEGA_STONES[mon.item]===name:baseSpecies(mon.pokemon)===name));
+ const top=el('div','detail-top');top.append(pokemonImage(name));const heading=el('div');heading.append(el('h3','',name),el('div','detail-sub',`${matched.length} of ${TOTAL} teams · ${percent(matched.length)} usage`));
+ const close=el('button','detail-close','✕ Close');close.type='button';close.addEventListener('click',()=>{panel.hidden=true;panel.replaceChildren()});top.append(heading,close);panel.append(top);
+ const items=new Map(),partners=new Map();
+ matched.forEach(team=>{
+   team.filter(m=>isMega?MEGA_STONES[m.item]===name:baseSpecies(m.pokemon)===name).forEach(m=>items.set(m.item,(items.get(m.item)||0)+1));
+   const partnersInTeam=new Set(team.filter(m=>!(isMega?MEGA_STONES[m.item]===name:baseSpecies(m.pokemon)===name)).map(m=>baseSpecies(m.pokemon)));
+   partnersInTeam.forEach(p=>partners.set(p,(partners.get(p)||0)+1));
+ });
+ const sorted=map=>[...map.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+ function column(title,list,item){const col=el('div');col.append(el('h4','',title));list.forEach(([name,count])=>{const row=el('div','detail-stat');row.append(item?window.PLSprites.image(name,true):pokemonImage(name));const inner=el('div','detail-stat-content');inner.append(el('div','detail-stat-name',name),el('div','detail-stat-meta',`${count}/${matched.length} · ${percent(count,matched.length)}`));row.append(inner);col.append(row)});return col}
+ const cols=el('div','detail-columns');cols.append(column('Held items',sorted(items),true),column('Most common teammates',sorted(partners).slice(0,5),false));panel.append(cols);
+ document.querySelectorAll('.pokemon-entry[aria-selected]').forEach(row=>row.setAttribute('aria-selected',String(!isMega&&row.dataset.pokemon===name)));
+ panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function render(rows,id,type,filter){
+ const target=document.getElementById(id);target.replaceChildren();let matches=0;
+ rows.forEach((entry,index)=>{
+   if(!entry.name.toLowerCase().includes(filter.trim().toLowerCase()))return;matches++;
+   const tr=el('tr',type==='pokemon'?'pokemon-entry':type==='mega'?'mega-entry':'');
+   if(type!=='item') {tr.tabIndex=0;tr.dataset.pokemon=entry.name;tr.setAttribute('aria-label','View '+entry.name+' details');const click=()=>{detail(entry.name,type==='mega')};tr.addEventListener('click',click);tr.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();click()}})}
+   const first=el('td'),cell=el('div','cellname');cell.append(el('span','rank',String(index+1)));const img=type==='item'?window.PLSprites.image(entry.name,true):pokemonImage(entry.name);if(type==='item')img.className='itemicon';cell.append(img,el('span','',entry.name));first.append(cell);
+   const count=el('td','right',String(entry.count));const usage=el('td','right');const row=el('div','usage'),meter=el('span','meter'),fill=el('span');
+   const denominator=type==='item'?TEAMS.length*6:TOTAL;fill.style.width=percent(entry.count,denominator);meter.append(fill);row.append(meter,el('span','pct',percent(entry.count,denominator)));usage.append(row);tr.append(first,count,usage);target.append(tr);
+ });
+ if(!matches){const tr=el('tr'),cell=el('td','','No matches');cell.colSpan=3;tr.append(cell);target.append(tr)}
+}
+podium();
+const buckets=[['pokemon','pokemon','monsearch','monrows'],['item','item','itemsearch','itemrows']];
+for(const [type,prop,search,id] of buckets){const records=ranked(prop),input=document.getElementById(search);const refresh=()=>render(records,id,type,input.value);input.addEventListener('input',refresh);refresh()}
+const megaRecords=[...MEGA_COUNTS].map(([name,count])=>({name,count})).sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name));
+const megaSearch=document.getElementById('megasearch');const refreshMega=()=>render(megaRecords,'megarows','mega',megaSearch.value);megaSearch.addEventListener('input',refreshMega);refreshMega();
+
+(() => {
+ const sections=[...document.querySelectorAll('.tournament-content section[id]')];
+ const links=[...document.querySelectorAll('.sidebar-link[data-section]')];
+ const activate=id=>links.forEach(link=>{const active=link.dataset.section===id;link.classList.toggle('active',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')});
+ let scheduled=false;
+ const update=()=>{scheduled=false;const threshold=window.innerWidth<=960?150:110;let id=sections[0]?.id;sections.forEach(section=>{if(section.getBoundingClientRect().top<=threshold)id=section.id});if(id)activate(id)};
+ window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update)}},{passive:true});window.addEventListener('resize',update);links.forEach(link=>link.addEventListener('click',()=>activate(link.dataset.section)));update();
+})();</script></body></html>
