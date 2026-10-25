@@ -158,6 +158,7 @@ header .brand img{width:46px;height:46px}
 const WINNERS = [{"place":1,"name":"SGB_64","team":["Smeargle","Chansey","Bewear","Staraptor","Ditto","Pyroar"]},{"place":2,"name":"Luxter18","team":["Staraptor","Chansey","Porygon-Z","Lopunny","Obstagoon","Indeedee"]},{"place":3,"name":"I_Sigh","team":["Smeargle","Staraptor","Porygon-Z","Porygon2","Lopunny","Ursaluna"]}];
 const SECONDS = {"Staraptor":"Heavy-Duty Boots","Chansey":"Eviolite","Porygon-Z":"Normalium Z","Lopunny":"Lopunnite","Obstagoon":"Flame Orb","Indeedee":"Choice Scarf"};
 const FIRSTS = {"Smeargle":{"item":"Focus Sash","ability":"Own Tempo","evs":"252 HP / 4 SpD / 252 Spe","nature":"Timid","ivs":"0 Atk","moves":["Sunny Day","Sticky Web","Stealth Rock","Parting Shot"]},"Chansey":{"item":"Eviolite","ability":"Natural Cure","evs":"248 HP / 252 Def / 8 SpD","nature":"Bold","ivs":"0 Atk","moves":["Seismic Toss","Soft-Boiled","Thunder Wave","Teleport"]},"Bewear":{"item":"Leftovers","ability":"Fluffy","evs":"252 HP / 252 Def / 4 SpD","nature":"Impish","moves":["Drain Punch","Ice Punch","Bulk Up","Darkest Lariat"]},"Staraptor":{"item":"Heavy-Duty Boots","ability":"Reckless","evs":"252 Atk / 4 SpD / 252 Spe","nature":"Jolly","moves":["Brave Bird","Close Combat","Defog","Final Gambit"]},"Pyroar":{"item":"Pyroarite","ability":"Rivalry","evs":"252 HP / 252 SpA / 4 SpD","nature":"Serious","ivs":"0 Atk","moves":["Flamethrower","Overheat","Earth Power"]},"Ditto":{"item":"Choice Scarf","ability":"Imposter","evs":"248 HP / 252 Def / 8 SpD","nature":"Bold","ivs":"30 Atk","moves":["Transform"]}};
+const THIRD_ITEMS = {"Smeargle":"Focus Sash","Staraptor":"Choice Scarf","Porygon-Z":"Normalium Z","Porygon2":"Eviolite","Lopunny":"Lopunnite","Ursaluna":"Flame Orb"};
 const THIRDS = {};
 const MEGA_STONES = {"Lopunnite":"Lopunny Mega","Drampanite":"Drampa Mega","Pyroarite":"Pyroar Mega","Pidgeotite":"Pidgeot Mega"};
 const TOTAL = TEAMS.length;
@@ -167,6 +168,7 @@ function el(tag,cls,txt){const node=document.createElement(tag);if(cls)node.clas
 function percent(n,d=TOTAL){return (100*n/d).toFixed(1)+'%'}
 function fallbackImage(name){return window.PLSprites.image(name)}
 function pokemonImage(name){
+ if(name==='Pyroar Mega') return fallbackImage('Pyroar');
  const specials={
   'Arcanine (Hisui)':['arcanine-hisui','arcaninehisui'],
   'Tauros (Paldea Blaze)':['tauros-paldeablaze','tauros-paldea-blaze','taurospaldeablaze'],
@@ -205,7 +207,7 @@ function podium(){
    w.team.forEach(mon=>{
      const tile=el('div','moncard');
      const set=w.place===1?FIRSTS[mon]:(w.place===3?THIRDS[mon]:null);
-     const heldItem=w.place===2?SECONDS[mon]:set?.item;
+     const heldItem=w.place===2?SECONDS[mon]:(w.place===3?THIRD_ITEMS[mon]:set?.item);
 
 
      const displayName=MEGA_STONES[heldItem]||mon;
