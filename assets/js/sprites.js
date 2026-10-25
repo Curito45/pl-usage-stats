@@ -1,6 +1,6 @@
-/* Shared Poke Legends artwork loader — used by every tournament. */
+
 window.PLSprites = (() => {
-  const BASE = '/pl-usage-stats/assets/';
+  const BASE = '/assets/';
   const SHOWDOWN = 'https://play.pokemonshowdown.com/sprites/';
   const POKEAPI = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/';
   const POKESPRITE = 'https://raw.githubusercontent.com/msikma/pokesprite/master/';
@@ -92,8 +92,8 @@ window.PLSprites = (() => {
       `${SHOWDOWN}itemicons/${n}.png`,
       `${POKEAPI}items/${n}.png`
     ];
-    // Z-Crystals have distinct held/bag icon filenames in PokéAPI.
-    // This also handles Groundium, Darkinium, Flyinium, Incinium and Rockium Z.
+
+
     if (/ium-z$/.test(n)) {
       result.push(`${BASE}sprites/overrides/items/${n}--held.png`);
       result.push(`${BASE}sprites/overrides/items/${n}--bag.png`);
