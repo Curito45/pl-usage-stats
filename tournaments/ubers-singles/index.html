@@ -264,11 +264,12 @@ function sprite(name,isItem=false){
  img.src=candidates[0];return img;
 }
 function podiumForm(mon){if(MEGA_STONES[mon.item])return MEGA_STONES[mon.item];if(mon.pokemon==='Kyogre'&&mon.item==='Blue Orb')return 'Kyogre Primal';if(mon.pokemon==='Groudon'&&mon.item==='Red Orb')return 'Groudon Primal';return mon.pokemon;}
+const baseSpecies=name=>({"Zacian-Crowned":"Zacian","Zamazenta-Crowned":"Zamazenta"}[name]||name);
 const counts=new Map(),items=new Map(),heldBy=new Map(),mates=new Map();
 for(const team of TEAMS){
- const uniq=[...new Set(team.map(m=>m.pokemon))];
+ const uniq=[...new Set(team.map(m=>baseSpecies(m.pokemon)))];
  for(const pokemon of uniq){counts.set(pokemon,(counts.get(pokemon)||0)+1);if(!mates.has(pokemon))mates.set(pokemon,new Map());for(const pal of uniq)if(pal!==pokemon)mates.get(pokemon).set(pal,(mates.get(pokemon).get(pal)||0)+1);}
- for(const mon of team){items.set(mon.item,(items.get(mon.item)||0)+1);if(!heldBy.has(mon.pokemon))heldBy.set(mon.pokemon,new Map());const bag=heldBy.get(mon.pokemon);bag.set(mon.item,(bag.get(mon.item)||0)+1);}
+ for(const mon of team){items.set(mon.item,(items.get(mon.item)||0)+1);const pokemon=baseSpecies(mon.pokemon);if(!heldBy.has(pokemon))heldBy.set(pokemon,new Map());const bag=heldBy.get(pokemon);bag.set(mon.item,(bag.get(mon.item)||0)+1);}
 }
 const sorted=(map)=>[...map].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
 const holder=document.getElementById('podium');
