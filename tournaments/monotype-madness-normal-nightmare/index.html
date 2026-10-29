@@ -195,6 +195,7 @@ function el(tag,cls,txt){const node=document.createElement(tag);if(cls)node.clas
 function percent(n,d=TOTAL){return (100*n/d).toFixed(1)+'%'}
 function fallbackImage(name){return window.PLSprites.image(name)}
 function pokemonImage(name){
+ if(name==='Indeedee (Male)')return fallbackImage('Indeedee');
  if(name==='Pyroar Mega'){
   const img=el('img'); img.loading='lazy';img.alt=name;
   const sources=['/assets/sprites/overrides/pokemon/pyroar-mega.png','https://assets.pokeos.com/pokemon/home/render/668-mega.png'];
