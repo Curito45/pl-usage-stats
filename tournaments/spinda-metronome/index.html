@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#0a101b" name="theme-color"/><title>Spinda Metronome | Poke Legends</title><style>
+:root{color-scheme:dark;--bg:#0a101b;--card:#152034;--card2:#1b2a42;--line:#304059;--ink:#edf4fc;--muted:#a6b6ce;--mint:#68e0c9;--gold:#ffcb69;--blue:#7fb8ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 45% -16%,#263853 0%,transparent 55%),var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:inherit}a:hover{color:var(--mint)}main{max-width:1160px;margin:auto;padding:25px 22px 80px}header{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding:13px 0;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-weight:900;letter-spacing:.09em}.brand b{color:var(--mint)}.topnav{display:flex;gap:18px;font-size:13px;color:var(--muted)}.eyebrow{font-size:11px;font-weight:850;letter-spacing:.19em;color:var(--mint);text-transform:uppercase}.hero{padding:45px 0 27px}.event-date{color:var(--gold);font-size:15px;font-weight:750;margin:0 0 14px}.hero h1{font-size:clamp(36px,6vw,62px);line-height:1.06;letter-spacing:-.045em;margin:7px 0 12px}.muted,.desc{color:var(--muted)}.desc{max-width:690px;font-size:16px}.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.stat{padding:13px 19px;background:var(--card);border:1px solid var(--line);border-radius:12px;min-width:135px}.stat strong{font-size:24px;display:block}.stat small{color:var(--muted)}section{margin-top:45px;scroll-margin-top:15px}h2{font-size:25px;letter-spacing:-.025em;margin:0 0 5px}.secthead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:19px;flex-wrap:wrap}.panel,.winner,.tile{border:1px solid var(--line);background:var(--card);border-radius:16px}.archivegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px}.tile{text-decoration:none;padding:24px;display:flex;flex-direction:column;gap:10px;min-height:200px;transition:transform .18s,border-color .18s}.tile:hover{transform:translateY(-2px);border-color:var(--mint);color:var(--ink)}.tile h2{margin:0}.button{display:inline-flex;gap:6px;width:max-content;padding:9px 14px;border-radius:9px;color:#0a1921;background:var(--mint);font-weight:800;text-decoration:none}.button:hover{color:#0a1921;filter:brightness(1.07)}.podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.winner{overflow:hidden;padding:17px}.winner.first{border-color:#92713b;background:linear-gradient(150deg,#2d2b29,var(--card) 60%)}.medal{font-weight:800;font-size:12px;color:var(--gold)}.winner h3{font-size:clamp(17px,2.2vw,24px);margin:6px 0 13px;overflow-wrap:anywhere;line-height:1.15}.teamgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.moncard{border-radius:11px;padding:10px 4px;text-align:center;background:var(--card2);border:1px solid #344660;min-width:0}.moncard img{width:min(100%,75px);height:72px;object-fit:contain;display:block;margin:0 auto}.moncard strong{display:block;font-size:12px;overflow-wrap:anywhere;line-height:1.2}.moncard small{font-size:10px;color:var(--muted);overflow-wrap:anywhere;display:block}.details{margin-top:14px}.details summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--mint)}.sets{margin-top:13px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.set{padding:11px 12px;background:#0c1626;border-radius:9px;font-size:12px}.set h4{margin:0 0 6px;font-size:13px}.set p{margin:2px 0;color:var(--muted)}.set ul{margin:5px 0 0;padding-left:18px}.barlinks{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.barlinks a{padding:8px 13px;border:1px solid var(--line);background:var(--card2);border-radius:9px;text-decoration:none;font-size:13px}.barlinks a:hover{border-color:var(--mint)}.panel{overflow:hidden}.toolbar{padding:13px;border-bottom:1px solid var(--line)}input{width:100%;max-width:320px;padding:10px 12px;background:#0c1726;color:var(--ink);border:1px solid #3a506c;border-radius:8px;font:inherit}table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;background:#1d2d44;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}th,td{padding:9px 16px;border-bottom:1px solid #273a52}tbody tr:hover{background:#1c2a3d}.right{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.cellname{display:flex;align-items:center;gap:12px;font-weight:650}.cellname img{width:46px;height:46px;object-fit:contain}.cellname .itemicon{width:32px;height:32px;image-rendering:pixelated}.rank{min-width:24px;color:var(--muted);font-size:12px}.usage{display:flex;align-items:center;justify-content:end;gap:12px}.meter{width:104px;height:7px;background:#34445b;border-radius:10px;overflow:hidden}.meter span{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--mint))}.pct{min-width:54px;text-align:right;font-weight:700}.note{font-size:12px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:20px;margin-top:55px;color:var(--muted);font-size:12px}@media(max-width:850px){.podium{grid-template-columns:1fr}.teamgrid{grid-template-columns:repeat(6,minmax(0,1fr))}.moncard img{height:64px}.winner h3{font-size:22px}}@media(max-width:570px){main{padding:16px 12px 50px}.teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.sets{grid-template-columns:1fr}.meter{width:40px}.cellname{gap:6px}th,td{padding:8px}.cellname img{width:36px;height:36px}.stat{min-width:100px;padding:11px}.topnav{gap:9px}.winner{padding:13px}}
+
+
+:root{--bg:#0c0d1b;--card:#18172c;--card2:#24213b;--line:#45405a;--ink:#fbf7ff;--muted:#b7afc9;--mint:#ffc24a;--gold:#ffc24a;--blue:#da72ee}
+body{background:radial-gradient(ellipse at 75% -4%,#332149 0,transparent 46%),radial-gradient(ellipse at 6% 28%,#15243f 0,transparent 42%),var(--bg)}
+header{min-height:84px}header .brand{display:flex;align-items:center;gap:10px;letter-spacing:.04em;font-size:16px}header .brand img{width:62px;height:62px;object-fit:contain}header .brand b{color:var(--gold)}.topnav a{text-decoration:none;font-weight:700}.topnav a:hover{color:var(--gold)}
+.eyebrow{color:var(--gold)}.hero{padding:55px 0 35px}.hero h1{font-size:clamp(40px,6vw,67px);letter-spacing:-.055em}.hero h1 span{color:var(--gold)!important}.event-date{color:#e5d3f1;font-weight:650;margin-top:0}.stat,.panel,.winner{background:linear-gradient(145deg,#242039,#171629 70%);border-color:var(--line)}.winner.first{background:linear-gradient(140deg,#3c2c30,#1a172b 65%);border-color:#b18849}.button,.barlinks a{border-radius:11px}.barlinks a{background:#29233e}.barlinks a:hover{border-color:var(--gold)}.moncard{background:#282440;border-color:#45405b}.set{background:#101226}.details summary{color:var(--gold)}th{background:#26213b}th,td{border-color:#383149}tbody tr:hover{background:#29243f}.meter{background:#39334d}.meter span{background:linear-gradient(90deg,#dd75ec,#ffc24a)}input{background:#101222;border-color:#51486a}input:focus{outline:2px solid #ffc24a55}.stats .stat strong{color:#fff}
+@media(max-width:570px){header .brand img{width:50px;height:50px}header .brand{font-size:13px}header{min-height:72px}}
+
+
+.pokemon-entry{cursor:pointer}.pokemon-entry:focus-visible{outline:2px solid var(--mint);outline-offset:-3px}.pokemon-entry[aria-selected="true"]{background:rgba(255,193,76,.12)}.pokemon-entry:hover{background:rgba(255,193,76,.07)}
+.details-panel{background:linear-gradient(130deg,#251f3b,#17182d);border:1px solid #675277;border-radius:16px;padding:20px;margin:0 0 16px;scroll-margin-top:16px}.details-panel[hidden]{display:none}.detail-top{display:flex;align-items:center;gap:16px}.detail-top img{height:85px;width:85px;object-fit:contain}.detail-top h3{font-size:23px;margin:0}.detail-sub{font-size:13px;color:var(--muted)}.detail-close{margin-left:auto;align-self:flex-start;background:#332943;border:1px solid #665377;border-radius:8px;color:#f5edff;padding:7px 11px;cursor:pointer}.detail-columns{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:20px}.detail-columns h4{font-size:14px;margin:0 0 11px}.detail-stat{display:flex;align-items:center;gap:10px;min-height:44px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.09)}.detail-stat img{width:36px;height:36px;object-fit:contain}.detail-stat-content{flex:1;min-width:0}.detail-stat-name{font-weight:650;font-size:13px}.detail-stat-meta{font-size:11px;color:var(--muted)}.detail-empty{color:var(--muted);font-size:13px}.item-disclosure{border:1px solid var(--line);border-radius:16px;overflow:hidden}.item-disclosure>summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:17px 20px;background:var(--card);font-weight:750}.item-disclosure>summary::-webkit-details-marker{display:none}.item-disclosure>summary::after{content:'▾';font-size:18px;color:var(--gold)}.item-disclosure[open]>summary::after{content:'▴'}.item-disclosure>summary:hover{background:var(--card2)}.item-disclosure .panel{border:0;border-radius:0}.item-summary-hint{font-weight:400;color:var(--muted);font-size:12px}
+@media(max-width:620px){.detail-columns{grid-template-columns:1fr}.detail-top img{width:65px;height:65px}.details-panel{padding:14px}}
+
+
+main{max-width:1370px}
+.tournament-layout{display:grid;grid-template-columns:220px minmax(0,1fr);align-items:start;gap:26px;margin-top:30px}
+.tournament-content{min-width:0}
+.tournament-content>section:first-child{margin-top:0}
+.tournament-sidebar{position:sticky;top:22px;align-self:start;max-height:calc(100vh - 44px);overflow-y:auto;border:1px solid var(--line);background:linear-gradient(155deg,#242039,#171629 75%);border-radius:16px;padding:18px;scrollbar-width:thin}
+.sidebar-heading{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--gold);font-weight:800;margin-bottom:15px}
+.sidebar-links{display:grid;gap:7px}
+.sidebar-link{display:flex;align-items:center;gap:10px;color:var(--muted);text-decoration:none;border:1px solid transparent;border-radius:10px;padding:11px 10px;font-weight:700;font-size:13px;transition:background .15s,border-color .15s,color .15s}
+.sidebar-link:hover,.sidebar-link.active{color:#fff;background:#393049;border-color:#80628c}
+.sidebar-link.active{box-shadow:inset 3px 0 0 var(--gold)}
+.sidebar-separator{border:0;border-top:1px solid var(--line);margin:18px 0}
+.sidebar-summary{display:grid;grid-template-columns:1fr;gap:11px}
+.sidebar-summary .stat{min-width:0;margin:0;padding:10px 12px;background:#211e35}
+.sidebar-summary .stat strong{font-size:23px;line-height:1.25}
+.sidebar-summary .stat small{font-size:11px}
+.mobile-section-nav{display:none}
+.tournament-content section{scroll-margin-top:25px}
+@media(max-width:960px){
+ .tournament-layout{display:block;margin-top:10px}
+ .tournament-sidebar{display:none}
+ .mobile-section-nav{display:flex;gap:7px;position:sticky;top:0;z-index:40;overflow-x:auto;overscroll-behavior-x:contain;white-space:nowrap;margin:0 -16px 20px;padding:10px 16px;background:rgba(18,16,32,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);scrollbar-width:none}
+ .mobile-section-nav::-webkit-scrollbar{display:none}
+ .mobile-section-nav .sidebar-link{white-space:nowrap;background:#29233e;border:1px solid #45405a;padding:9px 13px;flex-shrink:0}
+ .mobile-section-nav .sidebar-link.active{background:#4a3357;border-color:#b18ac1;box-shadow:inset 0 -2px 0 var(--gold)}
+ .tournament-content section{scroll-margin-top:83px}
+ .tournament-content>section:first-child{margin-top:0}
+}
+@media(max-width:570px){.mobile-section-nav{margin-left:-12px;margin-right:-12px;padding-left:12px;padding-right:12px}.hero{padding-bottom:14px}}
+
+
+.rules-disclosure{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#242039,#171629 70%)}
+.rules-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:19px 22px;cursor:pointer;list-style:none;font-weight:750}
+.rules-disclosure>summary::-webkit-details-marker{display:none}
+.rules-disclosure>summary::after{content:'▾';font-size:20px;color:var(--gold)}
+.rules-disclosure[open]>summary::after{content:'▴'}
+.rules-disclosure>summary:hover{background:#29243f}
+.rules-subtitle{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:3px}
+.rules-body{padding:0 22px 22px;border-top:1px solid var(--line)}
+.rules-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.rules-body h3{font-size:14px;color:var(--gold);margin:20px 0 9px}
+.rules-body ul{margin:0;padding-left:20px;color:var(--ink)}.rules-body li{margin:5px 0}
+.rules-body a{color:var(--gold);text-underline-offset:3px}
+.rules-ban-list{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0 0;list-style:none;padding:0!important}
+.rules-ban-list li{background:#2e2841;border:1px solid #504361;border-radius:7px;padding:5px 9px;font-size:12px;margin:0}
+.rules-ban-section{margin-top:14px}.rules-ban-section h4{font-size:13px;margin:0 0 8px;color:#e9daf4}
+@media(max-width:620px){.rules-columns{grid-template-columns:1fr;gap:0}.rules-disclosure>summary{padding:16px}.rules-body{padding:0 16px 16px}}
+
+
+main{padding-top:10px}
+header{min-height:64px;padding:7px 0}
+header .brand img{width:46px;height:46px}
+.hero{padding:18px 0 10px}
+.hero .eyebrow{font-size:10px;letter-spacing:.15em}
+.hero h1{font-size:clamp(30px,3.7vw,44px);line-height:1.08;margin:4px 0}
+.hero .event-date{font-size:13px;margin:2px 0 0}
+.hero .desc{display:none}
+.tournament-layout{margin-top:14px;gap:18px;grid-template-columns:200px minmax(0,1fr)}
+.tournament-sidebar{top:12px;padding:13px;max-height:calc(100vh - 24px)}
+.sidebar-heading{margin-bottom:8px}
+.sidebar-links{gap:3px}
+.sidebar-link{padding:8px 9px}
+.sidebar-separator{margin:12px 0}
+.sidebar-summary{gap:7px}
+.sidebar-summary .stat{padding:7px 11px}
+.sidebar-summary .stat strong{font-size:20px}
+.tournament-content section{margin-top:30px}
+.tournament-content>section:first-of-type{margin-top:0}
+.secthead{margin-bottom:10px}
+.secthead h2{font-size:23px}
+.winner{padding:12px}
+.winner h3{font-size:clamp(16px,1.6vw,21px);margin:3px 0 9px}
+.podium{gap:10px}
+.teamgrid{gap:6px}
+.moncard{padding:5px 3px 6px;border-radius:9px}
+.moncard img{height:55px;width:min(100%,65px)}
+.moncard strong{font-size:11px;line-height:1.15}
+.moncard small{font-size:10px;line-height:1.15;margin-top:2px}
+.details{margin-top:10px}
+@media(max-width:960px){
+ .tournament-layout{margin-top:0;display:block}
+ .mobile-section-nav{margin-bottom:12px}
+ .hero{padding:20px 0 9px}
+ .podium{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .winner h3{font-size:16px}
+ .moncard img{height:48px}
+}
+@media(max-width:720px){
+ .podium{grid-template-columns:1fr}
+ .teamgrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+ .moncard img{height:52px}
+ .hero h1{font-size:34px}
+}
+@media(max-width:520px){
+ header .brand img{width:42px;height:42px}
+ .teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .moncard img{height:59px}
+}
+
+
+.tournament-switcher{margin:38px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
+.tournament-switcher-title{font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--gold);margin:0 0 13px}
+.tournament-switcher-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.tournament-switcher-link,.tournament-switcher-empty{min-height:94px;padding:17px;border-radius:13px;border:1px solid var(--line);background:linear-gradient(140deg,#28233e,#171629);display:flex;flex-direction:column;justify-content:center;gap:4px}
+.tournament-switcher-link{text-decoration:none;transition:border-color .15s,transform .15s}
+.tournament-switcher-link:hover,.tournament-switcher-link:focus-visible{border-color:var(--gold);color:var(--ink);transform:translateY(-2px)}
+.tournament-switcher-link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tournament-switcher-direction{font-size:11px;font-weight:750;color:var(--gold)}
+.tournament-switcher-name{font-size:16px;font-weight:800;line-height:1.3}
+.tournament-switcher-date{font-size:12px;color:var(--muted)}
+.tournament-switcher-link.newer,.tournament-switcher-empty.newer{text-align:right;align-items:flex-end}
+.tournament-switcher-empty{border-style:dashed;opacity:.53}
+.tournament-switcher-empty .tournament-switcher-name{font-size:13px;color:var(--muted);font-weight:600}
+@media(max-width:560px){.tournament-switcher-grid{gap:8px}.tournament-switcher-link,.tournament-switcher-empty{padding:12px;min-height:100px}.tournament-switcher-name{font-size:13px}.tournament-switcher-direction{font-size:10px}}
+
+
+.quick-tournament-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 12px}
+.quick-tournament-link,.quick-tournament-empty{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:58px;padding:10px 13px;border:1px solid var(--line);border-radius:11px;background:rgba(36,33,59,.58);text-decoration:none;min-width:0}
+.quick-tournament-link:hover,.quick-tournament-link:focus-visible{border-color:var(--gold);background:var(--card2);color:var(--ink)}
+.quick-tournament-link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.quick-tournament-overline{color:var(--gold);text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:850}
+.quick-tournament-name{font-size:13px;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.quick-tournament-date{font-size:11px;color:var(--muted)}
+.quick-tournament-empty{opacity:.38;border-style:dashed}
+.quick-tournament-link.right,.quick-tournament-empty.right{text-align:right;align-items:flex-end}
+@media(max-width:570px){.quick-tournament-nav{gap:6px}.quick-tournament-link,.quick-tournament-empty{padding:9px;min-height:56px}.quick-tournament-name{font-size:11px}.quick-tournament-overline{font-size:9px}.quick-tournament-date{font-size:10px}}
+
+
+.hero{position:relative;min-height:166px;padding:18px 0 15px 175px!important;margin-top:4px!important;margin-bottom:4px!important}
+.hero-poster{position:absolute;left:0;top:12px;width:150px;height:150px;object-fit:cover;border:1px solid #615471;border-radius:12px}
+.hero h1{font-size:clamp(29px,3.6vw,45px)!important;line-height:1.12;margin-bottom:7px!important}
+@media(max-width:700px){.hero{padding-left:107px!important;min-height:125px}.hero-poster{width:95px;height:105px}.hero h1{font-size:27px!important}}
+@media(max-width:380px){.hero{padding-left:0!important;padding-top:125px!important}.hero-poster{top:8px}}
+
+@media(min-width:721px){#podium.podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}#podium>.winner{min-width:0;grid-column:auto}}
+.mega-entry{cursor:pointer}.mega-entry:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+
+.standings-list{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#242039,#171629 70%)}
+.standings-entry{border-bottom:1px solid var(--line)}
+.standings-entry:last-child{border-bottom:0}
+.standings-row{display:grid;grid-template-columns:100px minmax(0,1fr) 120px;gap:14px;align-items:center;padding:12px 16px;min-height:49px}
+.standings-place{font-size:12px;color:var(--muted);font-weight:750}
+.standings-player{font-size:14px;font-weight:700;overflow-wrap:anywhere}
+.standings-entry.top-three .standings-place{color:var(--gold)}
+.standings-toggle{border:1px solid var(--line);border-radius:9px;background:var(--card2);color:var(--gold);font:inherit;font-weight:750;font-size:12px;padding:7px 10px;cursor:pointer;justify-self:end}
+.standings-toggle:hover,.standings-toggle:focus-visible{border-color:var(--gold)}
+.standings-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.standings-roster{padding:3px 16px 16px}
+.standings-roster[hidden]{display:none}
+.standings-teamgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.standings-teamgrid .moncard{min-width:0}
+.standings-teamgrid .moncard img{height:66px}
+@media(max-width:750px){.standings-teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.standings-row{grid-template-columns:78px minmax(0,1fr) 105px;gap:8px;padding:11px}.standings-roster{padding:3px 11px 11px}}
+@media(max-width:410px){.standings-row{grid-template-columns:72px minmax(0,1fr) 91px}.standings-toggle{padding:7px 6px;font-size:11px}.standings-teamgrid{gap:6px}}
+
+.standings-disclosure{margin-top:20px;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:linear-gradient(145deg,#242039,#171629 70%)}
+.standings-disclosure>summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:17px 20px;font-weight:800;color:var(--gold)}
+.standings-disclosure>summary::-webkit-details-marker{display:none}
+.standings-disclosure>summary::after{content:'▾';font-size:19px;color:var(--gold)}
+.standings-disclosure[open]>summary::after{content:'▴'}
+.standings-disclosure>summary:hover{background:var(--card2)}
+.standings-subtitle{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:2px}
+.standings-disclosure .standings-list{border:0;border-top:1px solid var(--line);border-radius:0;background:transparent}
+@media(max-width:570px){.standings-disclosure>summary{padding:14px}}
+
+#podium .moves-disclosure{margin-top:14px}
+#podium .moves-disclosure>summary{color:var(--gold);font-size:13px;font-weight:750;cursor:pointer}
+#podium .sets-grid{margin-top:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#podium .set-card{padding:11px;background:#101226;border-radius:9px;font-size:12px;line-height:1.55}
+#podium .set-card h4{font-size:13px;margin:0 0 6px}
+#podium .set-card p{margin:2px 0;color:var(--muted)}
+#podium .set-card ul{margin:5px 0 0;padding-left:18px}
+@media(max-width:570px){#podium .sets-grid{grid-template-columns:1fr}}
+
+#podium .moves-disclosure{margin-top:12px}#podium .moves-disclosure>summary{font-size:13px;color:var(--gold);font-weight:750;cursor:pointer}#podium .sets-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:13px}#podium .set-card{background:#101226;padding:10px;border-radius:9px;font-size:12px}#podium .set-card h4{margin:0 0 5px;font-size:13px}#podium .set-card p{margin:2px 0;color:var(--muted)}#podium .set-card ul{padding-left:18px;margin:6px 0}#podium .scrambled-name,.standings-player .scrambled-name{display:inline-block;min-width:14ch;white-space:nowrap;font:inherit;letter-spacing:inherit;color:inherit}@media(max-width:570px){#podium .sets-grid{grid-template-columns:1fr}}
+
+#podium.spinda-podium{grid-template-columns:repeat(2,minmax(0,1fr))}#podium.spinda-podium .teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}#podium.spinda-podium .moncard img{height:75px}.standings-player .scrambled-name{font:inherit;color:inherit;letter-spacing:inherit;display:inline-block;min-width:14ch;white-space:nowrap}@media(max-width:720px){#podium.spinda-podium{grid-template-columns:1fr}}
+</style>
+</head><body><main><header><a class="brand" href="/"><img alt="Poke Legends logo" src="../../assets/default-logo.png"/><span>POKE <b>LEGENDS</b></span></a><nav class="topnav"><a href="/">Tournaments</a><a href="https://store.poke-legends.com/">Store ↗</a></nav></header><div class="hero"><img alt="Spinda Metronome tournament poster" class="hero-poster" src="../../assets/tournaments/spinda-metronome.png"/><div class="eyebrow">POKE LEGENDS · TOURNAMENT</div><h1>Spinda Metronome</h1><p class="event-date">📅 <time datetime="2026-07-04">July 4, 2026</time></p></div><div class="tournament-layout"><aside aria-label="Tournament sections" class="tournament-sidebar"><div class="sidebar-heading">Spinda Metronome · Navigation</div><nav aria-label="Jump to tournament section" class="sidebar-links"><a class="sidebar-link" data-section="results" href="#results">🏆 <span>Podium</span></a><a class="sidebar-link" data-section="rules" href="#rules">📜 <span>Rules &amp; Format</span></a></nav></aside><div class="tournament-content"><nav aria-label="Tournament navigation" class="mobile-section-nav"><a class="sidebar-link" data-section="results" href="#results">🏆 Podium</a><a class="sidebar-link" data-section="rules" href="#rules">📜 Rules</a></nav><nav aria-label="Adjacent tournaments" class="quick-tournament-nav"><a class="quick-tournament-link" href="/tournaments/gen-8-cup/"><span class="quick-tournament-overline">← Next tournament</span><span class="quick-tournament-name">Gen 8 Cup</span><span class="quick-tournament-date">July 18, 2026</span></a><div class="quick-tournament-empty right"><span class="quick-tournament-overline">Previous tournament →</span><span class="quick-tournament-date">No older archived tournament</span></div></nav><section id="results"><div class="secthead"><div><div class="eyebrow">FINAL PLACEMENTS</div><h2>Tournament podium</h2></div></div><div class="podium" id="podium"></div><details class="standings-disclosure"><summary><span>View complete standings<span class="standings-subtitle">5th–16th and other participants</span></span></summary><div class="standings-list" id="standings-list"></div></details></section><section id="rules"><div class="secthead"><div><div class="eyebrow">EVENT INFORMATION</div><h2>Rules &amp; Format</h2></div></div><details class="rules-disclosure"><summary><span>View tournament rules<span class="rules-subtitle">Singles · 3v3 · Metronome only</span></span></summary><div class="rules-body"><div class="rules-columns"><div><h3>Format</h3><ul><li>Singles · 3v3</li><li>Single elimination</li><li>Hosted on Ascension</li></ul></div><div><h3>Rules</h3><ul><li>Only Spinda may be used</li><li>All Pokémon must know Metronome</li><li>No other moves allowed</li><li>All Pokémon provided by the organizers</li></ul></div></div></div></details></section></div></div><footer>Poke Legends · Spinda Metronome · July 4, 2026</footer></main><script src="../../assets/js/sprites.js"></script>
+<script>const el=(tag,cls,value)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=value;return e};
+function spindaImage(){const image=window.PLSprites?.image?.('Spinda');if(image)return image;const img=el('img');img.alt='Spinda';img.loading='lazy';img.src='https://play.pokemonshowdown.com/sprites/dex/spinda.png';return img}
+function spindaGrid(){const grid=el('div','teamgrid');for(let i=0;i<3;i++){const tile=el('div','moncard');tile.append(spindaImage(),el('strong','', 'Spinda'),el('small','','Metronome'));grid.append(tile)}return grid}
+const podium=[['🥇 CHAMPION','Curito45'],['🥈 RUNNER-UP','Abasilisk'],['🥉 3RD–4TH','SpookyLuc77'],['🥉 3RD–4TH','Clementos_']];
+const podiumTarget=document.getElementById('podium');podiumTarget.classList.add('spinda-podium');for(let i=0;i<podium.length;i++){const [label,name]=podium[i],card=el('article','winner'+(i===0?' first':''));card.append(el('div','medal',label),el('h3','',name),spindaGrid());podiumTarget.append(card)}
+const standings=[["5th–8th", "wsianggggg", true], ["5th–8th", "Fahrenheit_Tepes", true], ["5th–8th", "Luxter18", true], ["5th–8th", "MuscleDadi", true], ["9th–16th", "Xayou04", false], ["9th–16th", "MrBigTwinkie", false], ["9th–16th", "xelvio", false], ["9th–16th", null, false], ["9th–16th", "HydroDarkDemon8", false], ["9th–16th", "AllyCatergaming", false], ["9th–16th", "Pixellz26", false], ["9th–16th", "ThinusSel", false]];const list=document.getElementById('standings-list');
+for(const [place,name,showTeam] of standings){const holder=el('div','standings-entry'),row=el('div','standings-row');row.append(el('span','standings-place',place));const player=el('span','standings-player');if(name===null){const scrambled=el('span','scrambled-name');scrambled.dataset.length='14';player.append(scrambled)}else player.textContent=name;row.append(player);if(showTeam){const button=el('button','standings-toggle','Show team');button.type='button';button.setAttribute('aria-expanded','false');const roster=el('div','standings-roster');roster.hidden=true;const grid=spindaGrid();grid.classList.add('standings-teamgrid');roster.append(grid);button.addEventListener('click',()=>{roster.hidden=!roster.hidden;button.textContent=roster.hidden?'Show team':'Hide team';button.setAttribute('aria-expanded',String(!roster.hidden))});row.append(button);holder.append(row,roster)}else holder.append(row);list.append(holder)}
+const other=el('div','standings-entry'),last=el('div','standings-row');last.append(el('span','standings-place','17th+'),el('span','standings-player','Other participants'));other.append(last);list.append(other);
+const sections=[...document.querySelectorAll('.tournament-content section[id]')],links=[...document.querySelectorAll('.sidebar-link[data-section]')];function activate(id){links.forEach(link=>link.classList.toggle('active',link.dataset.section===id))}links.forEach(link=>link.addEventListener('click',()=>activate(link.dataset.section)));activate('results');
+</script><script defer="" src="../../assets/js/text-scramble.js"></script></body></html>
