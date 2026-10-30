@@ -152,8 +152,38 @@ header .brand img{width:46px;height:46px}
 
 @media(min-width:721px){#podium.podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}#podium>.winner{min-width:0;grid-column:auto}}
 .mega-entry{cursor:pointer}.mega-entry:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+
+
+.standings-list{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#242039,#171629 70%)}
+.standings-entry{border-bottom:1px solid var(--line)}
+.standings-entry:last-child{border-bottom:0}
+.standings-row{display:grid;grid-template-columns:100px minmax(0,1fr) 120px;gap:14px;align-items:center;padding:12px 16px;min-height:49px}
+.standings-place{font-size:12px;color:var(--muted);font-weight:750}
+.standings-player{font-size:14px;font-weight:700;overflow-wrap:anywhere}
+.standings-entry.top-three .standings-place{color:var(--gold)}
+.standings-toggle{border:1px solid var(--line);border-radius:9px;background:var(--card2);color:var(--gold);font:inherit;font-weight:750;font-size:12px;padding:7px 10px;cursor:pointer;justify-self:end}
+.standings-toggle:hover,.standings-toggle:focus-visible{border-color:var(--gold)}
+.standings-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.standings-roster{padding:3px 16px 16px}
+.standings-roster[hidden]{display:none}
+.standings-teamgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.standings-teamgrid .moncard{min-width:0}
+.standings-teamgrid .moncard img{height:66px}
+@media(max-width:750px){.standings-teamgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.standings-row{grid-template-columns:78px minmax(0,1fr) 105px;gap:8px;padding:11px}.standings-roster{padding:3px 11px 11px}}
+@media(max-width:410px){.standings-row{grid-template-columns:72px minmax(0,1fr) 91px}.standings-toggle{padding:7px 6px;font-size:11px}.standings-teamgrid{gap:6px}}
+
+.standings-disclosure{margin-top:20px;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:linear-gradient(145deg,#242039,#171629 70%)}
+.standings-disclosure>summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:17px 20px;font-weight:800;color:var(--gold)}
+.standings-disclosure>summary::-webkit-details-marker{display:none}
+.standings-disclosure>summary::after{content:'▾';font-size:19px;color:var(--gold)}
+.standings-disclosure[open]>summary::after{content:'▴'}
+.standings-disclosure>summary:hover{background:var(--card2)}
+.standings-subtitle{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:2px}
+.standings-disclosure .standings-list{border:0;border-top:1px solid var(--line);border-radius:0;background:transparent}
+@media(max-width:570px){.standings-disclosure>summary{padding:14px}}
+
 </style>
-</head><body><main><header><a class="brand" href="/"><img alt="Poke Legends logo" src="../../assets/default-logo.png"/><span>POKE <b>LEGENDS</b></span></a><nav class="topnav"><a href="/">Tournaments</a><a href="https://store.poke-legends.com/">Store ↗</a></nav></header><div class="hero"><img alt="VGC Doubles Showdown tournament poster" class="hero-poster" src="../../assets/tournaments/vgc-doubles-showdown.png"/><div class="eyebrow">POKE LEGENDS · TOURNAMENT</div><h1>VGC Doubles Showdown</h1><p class="event-date">📅 <time datetime="2026-08-29">August 29, 2026</time></p></div><div class="tournament-layout"><aside aria-label="Tournament sections" class="tournament-sidebar"><div class="sidebar-heading">VGC Doubles Showdown · Navigation</div><nav aria-label="Jump to tournament section" class="sidebar-links"><a class="sidebar-link" data-section="results" href="#results">🏆 <span>Podium</span></a><a class="sidebar-link" data-section="rules" href="#rules">📜 <span>Rules &amp; Format</span></a></nav></aside><div class="tournament-content"><nav aria-label="Tournament navigation" class="mobile-section-nav"><a class="sidebar-link" data-section="results" href="#results">🏆 Podium</a><a class="sidebar-link" data-section="rules" href="#rules">📜 Rules</a></nav><nav aria-label="Adjacent tournaments" class="quick-tournament-nav"><a class="quick-tournament-link" href="/tournaments/monotype-madness-normal-nightmare/"><span class="quick-tournament-overline">← Next tournament</span><span class="quick-tournament-name">Normal Nightmare</span><span class="quick-tournament-date">September 5, 2026</span></a><a class="quick-tournament-link right" href="/tournaments/stat-limit-showdown/"><span class="quick-tournament-overline">Previous tournament →</span><span class="quick-tournament-name">Stat Limit Showdown</span><span class="quick-tournament-date">August 22, 2026</span></a></nav><section id="results"><div class="secthead"><div><div class="eyebrow">FINAL PLACEMENTS</div><h2>Tournament podium</h2></div></div><div class="podium" id="podium"></div></section><section id="rules"><div class="secthead"><div><div class="eyebrow">EVENT INFORMATION</div><h2>Rules &amp; Format</h2></div></div><details class="rules-disclosure"><summary><span>View tournament rules<span class="rules-subtitle">Battle format, allowed mechanics, clauses and restrictions</span></span></summary><div class="rules-body"><div class="rules-columns"><div><h3>Format</h3><ul><li>Doubles · team of 6, bring 4 Pokémon</li><li>All Pokémon set to level 50</li><li>Double elimination</li><li>Best of 1 for each round</li><li>Best of 3 for finals</li><li>Hosted on Ascension</li><li>Required gimmick items provided</li></ul></div><div><h3>Rules</h3><ul><li>Current Pokémon World Championship ruleset</li><li>Regulation M–B Pokémon and items only</li><li>National Dex movesets</li><li>No Legendary Pokémon</li><li>No Paradox Pokémon</li><li>Standard VGC rules</li><li>Item Clause</li><li>Species Clause</li><li>Mega Evolution allowed</li><li>Hidden Power banned</li><li><a href="https://metavgc.com/guides/pokemon-champions-regulation-m-b-legal-pokemon-items-moves" rel="noopener noreferrer" target="_blank">Regulation M–B legal Pokémon and items reference</a></li></ul></div></div></div></details></section></div></div><footer>Poke Legends · Monotype Madness: Normal Nightmare · Tournament results and submitted-team statistics.</footer></main><script src="../../assets/js/sprites.js"></script>
+</head><body><main><header><a class="brand" href="/"><img alt="Poke Legends logo" src="../../assets/default-logo.png"/><span>POKE <b>LEGENDS</b></span></a><nav class="topnav"><a href="/">Tournaments</a><a href="https://store.poke-legends.com/">Store ↗</a></nav></header><div class="hero"><img alt="VGC Doubles Showdown tournament poster" class="hero-poster" src="../../assets/tournaments/vgc-doubles-showdown.png"/><div class="eyebrow">POKE LEGENDS · TOURNAMENT</div><h1>VGC Doubles Showdown</h1><p class="event-date">📅 <time datetime="2026-08-29">August 29, 2026</time></p></div><div class="tournament-layout"><aside aria-label="Tournament sections" class="tournament-sidebar"><div class="sidebar-heading">VGC Doubles Showdown · Navigation</div><nav aria-label="Jump to tournament section" class="sidebar-links"><a class="sidebar-link" data-section="results" href="#results">🏆 <span>Podium</span></a><a class="sidebar-link" data-section="standings" href="#standings">📋 <span>Top 16</span></a><a class="sidebar-link" data-section="rules" href="#rules">📜 <span>Rules &amp; Format</span></a></nav></aside><div class="tournament-content"><nav aria-label="Tournament navigation" class="mobile-section-nav"><a class="sidebar-link" data-section="results" href="#results">🏆 Podium</a><a class="sidebar-link" data-section="standings" href="#standings">📋 Top 16</a><a class="sidebar-link" data-section="rules" href="#rules">📜 Rules</a></nav><nav aria-label="Adjacent tournaments" class="quick-tournament-nav"><a class="quick-tournament-link" href="/tournaments/monotype-madness-normal-nightmare/"><span class="quick-tournament-overline">← Next tournament</span><span class="quick-tournament-name">Normal Nightmare</span><span class="quick-tournament-date">September 5, 2026</span></a><a class="quick-tournament-link right" href="/tournaments/stat-limit-showdown/"><span class="quick-tournament-overline">Previous tournament →</span><span class="quick-tournament-name">Stat Limit Showdown</span><span class="quick-tournament-date">August 22, 2026</span></a></nav><section id="results"><div class="secthead"><div><div class="eyebrow">FINAL PLACEMENTS</div><h2>Tournament podium</h2></div></div><div class="podium" id="podium"></div></section><section id="standings"><div class="secthead"><div><div class="eyebrow">EXTENDED PLACEMENTS</div><h2>Top 16 standings</h2></div></div><details class="standings-disclosure"><summary><span>View Top 16 standings<span class="standings-subtitle">Top 8 team dropdowns included where teams were provided</span></span></summary><div class="standings-list" id="standings-list"></div></details></section><section id="rules"><div class="secthead"><div><div class="eyebrow">EVENT INFORMATION</div><h2>Rules &amp; Format</h2></div></div><details class="rules-disclosure"><summary><span>View tournament rules<span class="rules-subtitle">Battle format, allowed mechanics, clauses and restrictions</span></span></summary><div class="rules-body"><div class="rules-columns"><div><h3>Format</h3><ul><li>Doubles · team of 6, bring 4 Pokémon</li><li>All Pokémon set to level 50</li><li>Double elimination</li><li>Best of 1 for each round</li><li>Best of 3 for finals</li><li>Hosted on Ascension</li><li>Required gimmick items provided</li></ul></div><div><h3>Rules</h3><ul><li>Current Pokémon World Championship ruleset</li><li>Regulation M–B Pokémon and items only</li><li>National Dex movesets</li><li>No Legendary Pokémon</li><li>No Paradox Pokémon</li><li>Standard VGC rules</li><li>Item Clause</li><li>Species Clause</li><li>Mega Evolution allowed</li><li>Hidden Power banned</li><li><a href="https://metavgc.com/guides/pokemon-champions-regulation-m-b-legal-pokemon-items-moves" rel="noopener noreferrer" target="_blank">Regulation M–B legal Pokémon and items reference</a></li></ul></div></div></div></details></section></div></div><footer>Poke Legends · VGC Doubles Showdown · Tournament results and submitted-team statistics.</footer></main><script src="../../assets/js/sprites.js"></script>
 <script>const WINNERS = [
  {place:1,name:'I_Sigh',team:[['Swampert','Leftovers','swampert'],['Incineroar','Sitrus Berry','incineroar'],['Sneasler','Focus Sash','sneasler'],['Dragonite','Life Orb','dragonite'],['Gengar','Gengarite','gengar-mega'],['Ninetales (Alola)','Choice Scarf','ninetales-alola']]},
  {place:2,name:'Pendace',team:[['Delphox','Delphoxite','delphox-mega'],['Blastoise','Blastoisinite','blastoise-mega'],['Kingambit','Life Orb','kingambit'],['Sneasler','Focus Sash','sneasler'],['Incineroar','Sitrus Berry','incineroar'],['Sinistcha','Coba Berry','sinistcha']]},
@@ -163,4 +193,47 @@ const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className
 function sprite(slug,name){const img=el('img');img.loading='lazy';img.alt=name;const sources=['/assets/sprites/overrides/pokemon/'+slug+'.png','/assets/sprites/dex/'+slug+'.png','/assets/sprites/home/'+slug+'.png','https://play.pokemonshowdown.com/sprites/dex/'+slug+'.png'];let index=0;img.onerror=()=>{index++;if(index<sources.length)img.src=sources[index];else {img.onerror=null;img.src='/assets/default-logo.png'}};img.src=sources[0];return img}
 const podium=document.getElementById('podium');
 WINNERS.forEach(w=>{const card=el('article','winner'+(w.place===1?' first':''));card.append(el('div','medal',['🥇 CHAMPION','🥈 RUNNER-UP','🥉 THIRD PLACE'][w.place-1]),el('h3','',w.name));const grid=el('div','teamgrid');w.team.forEach(([name,item,slug])=>{const tile=el('div','moncard');tile.append(sprite(slug,name),el('strong','',name),el('small','',item));grid.append(tile)});card.append(grid);podium.append(card)});
+
+const STANDINGS_DATA=[
+ {place:'4th',name:'Luxter18',team:[['Delphox','Mega Stone','delphox-mega'],['Incineroar','Sitrus Berry','incineroar'],['Blastoise','Mega Stone','blastoise-mega'],['Kingambit','Chople Berry','kingambit'],['Sinistcha','Colbur Berry','sinistcha'],['Sneasler','White Herb','sneasler']]},
+ {place:'5th–6th',name:'WillHedon',team:[['Incineroar','Sitrus Berry','incineroar'],['Toxapex','Leftovers','toxapex'],['Garchomp','Choice Scarf','garchomp'],['Charizard','Charizardite Y','charizard-mega-y'],['Venusaur','Focus Sash','venusaur'],['Sylveon','Fairy Feather','sylveon']]},
+ {place:'5th–6th',name:'SGB_64',team:[['Talonflame','Focus Sash','talonflame'],['Staraptor','Mega Stone','staraptor-mega'],['Charizard','Mega Stone','charizard'],['Garchomp','Life Orb','garchomp'],['Kingambit','Chople Berry','kingambit'],['Sneasler','White Herb','sneasler']]},
+ {place:'7th–8th',name:'Never_Twisted',team:[['Staraptor','Staraptite','staraptor-mega'],['Mawile','Mawilite','mawile-mega'],['Farigiraf','Lum Berry','farigiraf'],['Whimsicott','Focus Sash','whimsicott'],['Garchomp','Expert Belt','garchomp'],['Rotom-Wash','Life Orb','rotom-wash']]},
+ {place:'7th–8th',name:'SoloWaffles',team:[['Whimsicott','Focus Sash','whimsicott'],['Charizard','Mega-Y','charizard-mega-y'],['Pelipper','Damp Rock','pelipper'],['Swampert','Mega Stone','swampert-mega'],['Incineroar','Sitrus Berry','incineroar'],['Mimikyu','Life Orb','mimikyu']]},
+ {place:'9th–12th',name:'Trainer0'},
+ {place:'9th–12th',name:'IsNotMC'},
+ {place:'9th–12th',name:'JoshyWoshyBoi'},
+ {place:'9th–12th',name:'SupJacky'},
+ {place:'13th–16th',name:'Clementos_'},
+ {place:'13th–16th',name:'c00kiem0nstaaa'},
+ {place:'13th–16th',name:'RacooonBoy'},
+ {place:'13th–16th',name:'Dastroyer03'}
+];
+(function renderStandings(){
+ const target=document.getElementById('standings-list');
+ for(const entry of STANDINGS_DATA){
+  const holder=el('div','standings-entry');
+  const row=el('div','standings-row');
+  row.append(el('span','standings-place',entry.place),el('span','standings-player',entry.name));
+  if(entry.team){
+   const button=el('button','standings-toggle','Show team');
+   button.type='button';button.setAttribute('aria-expanded','false');
+   const roster=el('div','standings-roster');roster.hidden=true;
+   const grid=el('div','standings-teamgrid');
+   for(const [pokemon,item,slug] of entry.team){
+    const tile=el('div','moncard');
+    tile.append(sprite(slug,pokemon),el('strong','',pokemon),el('small','',item));
+    grid.append(tile);
+   }
+   roster.append(grid);
+   button.addEventListener('click',()=>{roster.hidden=!roster.hidden;button.setAttribute('aria-expanded',String(!roster.hidden));button.textContent=roster.hidden?'Show team':'Hide team'});
+   row.append(button);holder.append(row,roster);
+  }else holder.append(row);
+  target.append(holder);
+ }
+ const other=el('div','standings-entry'),row=el('div','standings-row');
+ row.append(el('span','standings-place','17th+'),el('span','standings-player','Other participants'));
+ other.append(row);target.append(other);
+})();
+
 (() => {const sections=[...document.querySelectorAll('.tournament-content section[id]')];const links=[...document.querySelectorAll('.sidebar-link[data-section]')];const activate=id=>links.forEach(link=>{const on=link.dataset.section===id;link.classList.toggle('active',on);if(on)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')});let scheduled=false;const update=()=>{scheduled=false;const threshold=window.innerWidth<=960?150:110;let id=sections[0]?.id;sections.forEach(s=>{if(s.getBoundingClientRect().top<=threshold)id=s.id});if(id)activate(id)};window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update)}},{passive:true});window.addEventListener('resize',update);links.forEach(link=>link.addEventListener('click',()=>activate(link.dataset.section)));update()})();</script></body></html>
